@@ -1,0 +1,21 @@
+{
+  "host": "https://status.verifrax.net",
+  "repo": "VERIFRAX-STATUS",
+  "hostClass": "tool",
+  "role": "status",
+  "title": "VERIFRAX Status",
+  "description": "Canonical operational status surface for the VERIFRAX perimeter.",
+  "deployMode": "static-root",
+  "adjacentHosts": {
+    "Execution": "https://api.verifrax.net",
+    "Proof publication": "https://proof.verifrax.net",
+    "Verification": "https://verify.verifrax.net",
+    "Authority": "https://auctoriseal.verifrax.net",
+    "Runtime reference": "https://corpiform.verifrax.net",
+    "Enforcement reference": "https://cicullis.verifrax.net",
+    "Seal archive": "https://sigillarium.verifrax.net",
+    "Intake": "https://apply.verifrax.net",
+    "Documentation": "https://docs.verifrax.net",
+    "Status": "https://status.verifrax.net"
+  }
+}
