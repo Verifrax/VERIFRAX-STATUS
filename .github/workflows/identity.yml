@@ -1,0 +1,46 @@
+name: Identity
+
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  identity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify host identity boundary
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          test -f README.md
+          test -f LICENSE
+          test -f surface.host.json
+          test -f .github/workflows/pages.yml
+          test -f .github/workflows/surface-validate.yml
+          test -f "public/CNAME"
+
+          grep -Fx "status.verifrax.net" "public/CNAME"
+          grep -F "https://status.verifrax.net" README.md
+          grep -F "Apache License Version 2.0" README.md
+
+          python3 - <<PY2
+          import json
+          from pathlib import Path
+
+          data = json.loads(Path("surface.host.json").read_text())
+
+          assert data["repo"] == "VERIFRAX-STATUS", data
+          assert data["host"] == "https://status.verifrax.net", data
+          assert data["hostClass"] == "tool", data
+          assert data["role"] == "status", data
+          assert data["deployMode"] == "static-root", data
+          assert "adjacentHosts" in data and isinstance(data["adjacentHosts"], dict) and data["adjacentHosts"], data
+          PY2

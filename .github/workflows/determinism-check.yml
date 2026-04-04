@@ -1,0 +1,96 @@
+name: Determinism Check
+
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  determinism:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Hard clean
+        shell: bash
+        run: |
+          set -euo pipefail
+          git reset --hard
+          git clean -ffd
+
+      - name: Verify clean workspace
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -z "$(git status --porcelain=v1)"
+          git diff --exit-code
+
+      - name: Build artifact twice and compare digests
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          build_once() {
+            out="$1"
+rm -rf "$out/dist"
+mkdir -p "$out/dist"
+cp public/index.html "$out/dist/index.html"
+cp public/404.html "$out/dist/404.html"
+cp public/CNAME "$out/dist/CNAME"
+cp -R surface-system "$out/dist/surface-system"
+test -f "$out/dist/index.html"
+test -f "$out/dist/404.html"
+test -f "$out/dist/CNAME"
+test -f "$out/dist/surface-system/shell/base.css"
+grep -Fx "status.verifrax.net" "$out/dist/CNAME"
+
+          }
+
+          tree_hash() {
+            python3 - "$1" <<PY2
+import hashlib
+import sys
+from pathlib import Path
+
+root = Path(sys.argv[1])
+h = hashlib.sha256()
+
+for p in sorted(root.rglob("*")):
+    if p.is_file():
+        rel = p.relative_to(root).as_posix().encode()
+        h.update(rel)
+        h.update(b"\0")
+        h.update(p.read_bytes())
+        h.update(b"\0")
+
+print(h.hexdigest())
+PY2
+          }
+
+          A="$(mktemp -d)"
+          B="$(mktemp -d)"
+
+          build_once "$A"
+          build_once "$B"
+
+          HASH_A="$(tree_hash "$A/dist")"
+          HASH_B="$(tree_hash "$B/dist")"
+
+          echo "HASH_A=$HASH_A"
+          echo "HASH_B=$HASH_B"
+
+          test "$HASH_A" = "$HASH_B"
+          diff -ru "$A/dist" "$B/dist"
+
+      - name: Verify clean workspace after build
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -z "$(git status --porcelain=v1)"
+          git diff --exit-code
