@@ -31,9 +31,11 @@ jobs:
           rm -rf dist
           mkdir -p dist
           cp public/index.html dist/index.html
+          cp public/404.html dist/404.html
           cp public/CNAME dist/CNAME
           cp -R surface-system dist/surface-system
           test -f dist/index.html
+          test -f dist/404.html
           test -f dist/CNAME
           test -f dist/surface-system/shell/base.css
           grep -Fx "status.verifrax.net" dist/CNAME
