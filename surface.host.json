@@ -4,18 +4,15 @@
   "hostClass": "tool",
   "role": "status",
   "title": "VERIFRAX Status",
-  "description": "Canonical operational status surface for the VERIFRAX perimeter.",
+  "description": "System status surface for the VERIFRAX public perimeter. This surface reports monitored status only. It does not publish proof, determine verification truth, issue authority, execute governed actions, or accept intake.",
   "deployMode": "static-root",
   "adjacentHosts": {
-    "Execution": "https://api.verifrax.net",
-    "Proof publication": "https://proof.verifrax.net",
-    "Verification": "https://verify.verifrax.net",
+    "Root": "https://www.verifrax.net",
+    "Docs": "https://docs.verifrax.net",
+    "Proof": "https://proof.verifrax.net",
+    "Verify": "https://verify.verifrax.net",
     "Authority": "https://auctoriseal.verifrax.net",
-    "Runtime reference": "https://corpiform.verifrax.net",
-    "Enforcement reference": "https://cicullis.verifrax.net",
-    "Seal archive": "https://sigillarium.verifrax.net",
-    "Intake": "https://apply.verifrax.net",
-    "Documentation": "https://docs.verifrax.net",
-    "Status": "https://status.verifrax.net"
+    "Runtime": "https://corpiform.verifrax.net",
+    "Execution": "https://api.verifrax.net"
   }
 }
