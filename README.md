@@ -1,6 +1,6 @@
 # VERIFRAX-STATUS
 
-Canonical repository for `status.verifrax.net`.
+VERIFRAX-STATUS is the Verifrax public status-host boundary: the public surface for `https://status.verifrax.net` that presents bounded status information without becoming authored protocol source, authority issuance, governed execution, public verification, proof publication, archive/reference, or intake.
 
 ## Proof artifacts
 
@@ -24,89 +24,132 @@ This repository is part of the VERIFRAX proof perimeter.
 
 ## Status
 
-- Repository role: public operational-status host surface
-- Public host ownership: `https://status.verifrax.net/`
-- Current live host binding: static public status page on the custom domain
-- Current monitoring truth: this repository currently presents a bounded status surface, not a fully evidenced component-health authority for every adjacent host
-- Package status: repository-only static surface
-- License: Apache License Version 2.0
+* Surface class: public status host
+* Repository class: status host surface
+* Public host ownership: `https://status.verifrax.net`
+* Host class: tool
+* Role: status
+* Deploy mode: static-root
+* Current repository posture: live public status boundary
+* License: Apache License Version 2.0
 
-## One-sentence role
+## Boundary
 
-`VERIFRAX-STATUS` owns the public operational-status host and must describe only the operational truth that is actually supported by the live surface.
+This repository owns public status presentation only.
 
-## What this repository is
+It presents bounded status information for public readers.
+It exposes status-surface role truth and status-host identity.
 
-This repository exists to hold:
+It does not author normative source material.
+It does not issue authority.
+It does not execute governed actions.
+It does not verify published material.
+It does not publish proof.
+It does not serve as archive/reference.
+It does not operate intake.
+It does not replace adjacent sovereign boundaries.
 
-- the public status host surface
-- status-oriented host content
-- host boundary metadata
-- adjacent-surface links
-- static deployment material for `status.verifrax.net`
+## What it does
 
-## What this repository is not
+- presents bounded status information at the public status host
+- preserves a clean status boundary for public readers
+- exposes status-surface identity without claiming operational authority
+- keeps status presentation distinct from authority, execution, verification, proof publication, and archive/reference
+- anchors public status-host role truth for adjacent repositories and hosts
 
-This repository is not:
+## What it does not do
 
-- the API host
-- the proof publication host
-- the verification host
-- the authority host
-- the runtime reference host
-- the intake host
-- the docs host
-- the commercial root host
+- not authored protocol source; that belongs to VERIFRAX
+- not authority issuance; that belongs to AUCTORISEAL
+- not governed execution; that belongs to CORPIFORM
+- not public verification; that belongs to VERIFRAX-verify
+- not proof publication; that belongs to proof
+- not archive/reference; that belongs to SIGILLARIUM
+- not intake; that belongs to apply
+- not constitutional doctrine; that belongs to SYNTAGMARIUM
+- not canonical world-state; that belongs to ORBISTIUM
+- not reconciliation or repair; that belongs to CONSONORIUM
+- not sovereign cognition; that belongs to TACHYRIUM
 
-It must not:
+## Adjacent sovereign surfaces
 
-- claim execution capability
-- claim proof publication
-- claim verification execution
-- claim authority issuance
-- claim component operational state beyond what the live status surface actually supports
-- imply fully evidenced monitoring for every adjacent surface when only a static status page is present
+- `VERIFRAX` — authored protocol and evidence-root boundary
+- `AUCTORISEAL` — authority issuance
+- `CORPIFORM` — governed execution
+- `VERIFRAX-verify` — public verification
+- `proof` — proof publication
+- `SIGILLARIUM` — archive/reference
+- `apply` — intake
+- `VERIFRAX-WWW` — public root host
+- `VERIFRAX-DOCS` — explanatory documentation
 
-## Current live boundary
+VERIFRAX-STATUS presents status.
+It does not author.
+It does not issue authority.
+It does not execute.
+It does not verify.
+It does not publish proof.
 
-The current live host is a static public operational-status surface.
+That separation must remain explicit.
 
-That means this repository may state:
+## Public surface
 
-- the status host is live
-- the status host is bounded to operational-status presentation
-- adjacent hosts exist and can be linked
+The public surface of this repository is its repository identity, README boundary, status host surface, and status-facing materials carried by this repository.
 
-It must not state stronger monitoring truth than the surface actually proves.
+Publication here is not authored source.
+Publication here is not authority.
+Publication here is not execution.
+Publication here is not verification.
+Publication here is not proof publication.
+Publication here is not archive/reference.
+Publication here is not intake.
 
-## Adjacent surfaces
+## Package / host / repo truth
 
-- `https://www.verifrax.net/` — commercial root
-- `https://api.verifrax.net/` — execution surface
-- `https://proof.verifrax.net/` — proof publication
-- `https://verify.verifrax.net/` — verification
-- `https://auctoriseal.verifrax.net/` — authority
-- `https://corpiform.verifrax.net/` — runtime reference
-- `https://cicullis.verifrax.net/` — enforcement reference
-- `https://sigillarium.verifrax.net/` — archive
-- `https://apply.verifrax.net/` — intake
-- `https://docs.verifrax.net/` — documentation
+Repository truth for VERIFRAX-STATUS lives in this repository.
+
+Host truth for this surface is `https://status.verifrax.net`.
+Host presentation and repository truth are related but not interchangeable.
+Repository boundary still controls status-host role truth here.
+
+## Status meaning in-system
+
+Status meaning in-system means the stack can point to VERIFRAX-STATUS and say that a bounded public status surface, status route, or status-facing presentation layer belongs to this boundary.
+
+Status here presents.
+Status here does not author.
+Status here does not issue authority.
+Status here does not execute.
+Status here does not verify.
+Status here does not publish proof.
+
+That does not by itself mean:
+
+- the status host became authored protocol source
+- the status host issued authority
+- the status host executed a governed action
+- the status host verified truth
+- the status host published proof
+- the status host replaced archive/reference
+- the status host replaced intake
+- the status host replaced the evidence-root repository
 
 ## Reading rule
 
-Read this repository as the status host boundary only.
+Read this repository as public status presentation only.
 
-Do not read it as proof, verification, authority, execution, intake, docs, or commercial truth.
+If this repository starts sounding like authored protocol source, authority, execution, verification, proof publication, archive, or intake at the same time, the boundary is already broken.
 
-Do not read static presentation as equivalent to live monitored component authority.
+## Not this
+
+VERIFRAX-STATUS is not authored protocol source.
+VERIFRAX-STATUS is not authority issuance.
+VERIFRAX-STATUS is not governed execution.
+VERIFRAX-STATUS is not public verification.
+VERIFRAX-STATUS is not proof publication.
+VERIFRAX-STATUS is not archive/reference.
+VERIFRAX-STATUS is not intake.
 
 ## License
 
 Apache License Version 2.0
-
-## Adjacent sovereign surfaces
-
-This repository is part of the Verifrax sovereign stack and remains bounded relative to:
-
-- **[ANAGNORIUM](https://github.com/Verifrax/ANAGNORIUM)** for terminal recognition
-- **[REGRESSORIUM](https://github.com/Verifrax/REGRESSORIUM)** for terminal recourse
