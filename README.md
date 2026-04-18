@@ -4,7 +4,7 @@ VERIFRAX-STATUS is the Verifrax public status-host boundary: the public surface 
 
 ## Proof artifacts
 
-This repository is part of the VERIFRAX proof perimeter.
+This repository is part of the VERIFRAX governed status-host perimeter.
 
 - **ARTIFACT-0006**
 - **ARTIFACT-0005**
@@ -47,7 +47,7 @@ It does not verify published material.
 It does not publish proof.
 It does not serve as archive/reference.
 It does not operate intake.
-It does not replace adjacent sovereign boundaries.
+It does not replace adjacent chamber boundaries or implementation strata.
 
 ## What it does
 
@@ -71,7 +71,7 @@ It does not replace adjacent sovereign boundaries.
 - not reconciliation or repair; that belongs to CONSONORIUM
 - not sovereign cognition; that belongs to TACHYRIUM
 
-## Adjacent sovereign surfaces
+## Adjacent chamber surfaces
 
 - `VERIFRAX` — authored protocol and evidence-root boundary
 - `AUCTORISEAL` — authority issuance
@@ -91,6 +91,39 @@ It does not verify.
 It does not publish proof.
 
 That separation must remain explicit.
+
+## Chamber stack vs implementation strata
+
+Read these as two different public classes:
+
+### Chambers
+
+- `SYNTAGMARIUM` — law
+- `ORBISTIUM` — state
+- `CONSONORIUM` — reconciliation
+- `TACHYRIUM` — cognition
+- `AUCTORISEAL` — authority
+- `CORPIFORM` — execution
+- `VERIFRAX` — verification
+- `ANAGNORIUM` — terminal recognition
+- `REGRESSORIUM` — terminal recourse
+
+### Implementation, host, and support strata
+
+- `VERIFRAX-WWW` — public root-host surface
+- `VERIFRAX-API` — API host implementation surface
+- `VERIFRAX-STATUS` — status host implementation surface
+- `VERIFRAX-SURFACE` — shared public-surface system
+- `VERIFRAX-SPEC` — derived specification publication
+- `VERIFRAX-DOCS` — explanatory documentation
+- `VERIFRAX-PROFILES` — deterministic profile-constraint surface
+- `VERIFRAX-verify` — public verification repository and UI boundary
+- `proof` — public proof publication surface
+- `SIGILLARIUM` — archive/reference surface
+- `apply` — intake surface
+
+These implementation, host, and support repositories are not parallel sovereignty.
+They must not be read as law, state, reconciliation, cognition, authority, execution, verification, terminal recognition, or terminal recourse merely because they are public-facing or operationally important.
 
 ## Public surface
 
