@@ -4,7 +4,7 @@
   "hostClass": "tool",
   "role": "status",
   "title": "VERIFRAX Status",
-  "description": "System status surface for the VERIFRAX public perimeter. This surface reports monitored status only. It does not publish proof, determine verification truth, issue authority, execute governed actions, or accept intake.",
+  "description": "Public status-host boundary for the VERIFRAX public perimeter. This surface presents bounded status information only. It does not issue authority, execute governed actions, verify published material, publish proof, serve archive/reference, or accept intake.",
   "deployMode": "static-root",
   "adjacentHosts": {
     "Root": "https://www.verifrax.net",
