@@ -31,7 +31,7 @@ This repository is part of the VERIFRAX governed status-host perimeter.
 * Role: status
 * Deploy mode: static-root
 * Current repository posture: live public status boundary
-* License: Apache License Version 2.0
+* License: Mozilla Public License 2.0
 
 ## Boundary
 
@@ -185,4 +185,5 @@ VERIFRAX-STATUS is not intake.
 
 ## License
 
-Apache License Version 2.0
+This repository is licensed under the Mozilla Public License 2.0. See `LICENSE`.
+
