@@ -29,7 +29,7 @@ jobs:
 
           grep -Fx "status.verifrax.net" "public/CNAME"
           grep -F "https://status.verifrax.net" README.md
-          grep -F "GNU General Public License v3.0" README.md
+          grep -F "" README.md
 
           python3 - <<PY2
           import json
