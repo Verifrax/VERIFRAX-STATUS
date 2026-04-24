@@ -1,5 +1,7 @@
 # VERIFRAX-STATUS
 
+* License: GNU General Public License v3.0
+
 VERIFRAX-STATUS is the Verifrax public status-host boundary: the public surface for `https://status.verifrax.net` that presents bounded status information without becoming authored protocol source, authority issuance, governed execution, public verification, proof publication, archive/reference, or intake.
 
 ## Proof artifacts
@@ -185,7 +187,4 @@ VERIFRAX-STATUS is not intake.
 
 ## License
 
-This repository is licensed under the Mozilla Public License 2.0. See `LICENSE`.
-
-
-License: Apache License Version 2.0
+This repository is licensed under the GNU General Public License v3.0. See `LICENSE`.
