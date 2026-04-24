@@ -3,10 +3,12 @@ name: README Identity Check
 on:
   push:
     paths:
-      - 'README.md'
+      - "README.md"
+      - ".github/workflows/readme-identity.yml"
   pull_request:
     paths:
-      - 'README.md'
+      - "README.md"
+      - ".github/workflows/readme-identity.yml"
 
 permissions:
   contents: read
@@ -17,45 +19,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Verify README identity header
+      - name: Verify README identity boundary
+        shell: bash
         run: |
           set -euo pipefail
 
-          README="README.md"
+          test -f README.md
 
-          if [[ ! -f "$README" ]]; then
-            echo "ERROR: README.md not found"
-            exit 1
-          fi
+          grep -F "VERIFRAX-STATUS" README.md
+          grep -F "https://status.verifrax.net" README.md
+          grep -F "Role: status" README.md
+          grep -F "Deploy mode: static-root" README.md
+          grep -F "Mozilla Public License 2.0" README.md
 
-          # Extract first code block content
-          HEADER="$(
-            awk '
-              /^```$/ && !inblock { inblock=1; next }
-              /^```$/ && inblock { exit }
-              inblock { print }
-            ' "$README"
-          )"
-
-          # Check for SYS-XXX or PRIM-XXX identity
-          if ! echo "$HEADER" | grep -qE '^(SYS|PRIM)-[0-9]{3}$'; then
-            echo "ERROR: README must start with SYS-XXX or PRIM-XXX identity"
-            echo "Found header:"
-            echo "$HEADER"
-            exit 1
-          fi
-
-          # Check for STATUS: REGISTERED
-          if ! echo "$HEADER" | grep -q 'STATUS:'; then
-            echo "ERROR: README header missing STATUS declaration"
-            exit 1
-          fi
-
-          # Check for REGISTRY: https://speedkit.eu
-          if ! echo "$HEADER" | grep -q 'REGISTRY: https://speedkit.eu'; then
-            echo "ERROR: README header missing REGISTRY URL"
-            exit 1
-          fi
-
-          echo "README identity header valid"
-          echo "$HEADER"
+          echo "README identity boundary valid"
