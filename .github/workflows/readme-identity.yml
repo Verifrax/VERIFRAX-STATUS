@@ -1,0 +1,61 @@
+name: README Identity Check
+
+on:
+  push:
+    paths:
+      - 'README.md'
+  pull_request:
+    paths:
+      - 'README.md'
+
+permissions:
+  contents: read
+
+jobs:
+  verify-identity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify README identity header
+        run: |
+          set -euo pipefail
+
+          README="README.md"
+
+          if [[ ! -f "$README" ]]; then
+            echo "ERROR: README.md not found"
+            exit 1
+          fi
+
+          # Extract first code block content
+          HEADER="$(
+            awk '
+              /^```$/ && !inblock { inblock=1; next }
+              /^```$/ && inblock { exit }
+              inblock { print }
+            ' "$README"
+          )"
+
+          # Check for SYS-XXX or PRIM-XXX identity
+          if ! echo "$HEADER" | grep -qE '^(SYS|PRIM)-[0-9]{3}$'; then
+            echo "ERROR: README must start with SYS-XXX or PRIM-XXX identity"
+            echo "Found header:"
+            echo "$HEADER"
+            exit 1
+          fi
+
+          # Check for STATUS: REGISTERED
+          if ! echo "$HEADER" | grep -q 'STATUS:'; then
+            echo "ERROR: README header missing STATUS declaration"
+            exit 1
+          fi
+
+          # Check for REGISTRY: https://speedkit.eu
+          if ! echo "$HEADER" | grep -q 'REGISTRY: https://speedkit.eu'; then
+            echo "ERROR: README header missing REGISTRY URL"
+            exit 1
+          fi
+
+          echo "README identity header valid"
+          echo "$HEADER"
