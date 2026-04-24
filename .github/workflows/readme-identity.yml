@@ -1,0 +1,35 @@
+name: README Identity Check
+
+on:
+  push:
+    paths:
+      - "README.md"
+      - ".github/workflows/readme-identity.yml"
+  pull_request:
+    paths:
+      - "README.md"
+      - ".github/workflows/readme-identity.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  verify-identity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify README identity boundary
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          test -f README.md
+
+          grep -F "VERIFRAX-STATUS" README.md
+          grep -F "https://status.verifrax.net" README.md
+          grep -F "Role: status" README.md
+          grep -F "Deploy mode: static-root" README.md
+          grep -F "Mozilla Public License 2.0" README.md
+
+          echo "README identity boundary valid"
