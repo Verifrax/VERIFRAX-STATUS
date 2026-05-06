@@ -1,0 +1,15 @@
+{
+  "boundary": {
+    "admissorium_does_not_publish_packages": true,
+    "admissorium_enforces_admissibility_against_accepted_truth": true,
+    "status_seal_does_not_author_admissibility_law": true,
+    "status_seal_does_not_mutate_accepted_truth": true,
+    "status_seal_does_not_mutate_chain_objects": true,
+    "status_seal_does_not_publish_packages": true,
+    "status_seal_not_truth_source": true
+  },
+  "object_type": "StatusPointer",
+  "pointer_id": "admissorium-v050-terminal-closure-seal-current",
+  "points_to": "seals/current/admissorium-v050-terminal-closure-seal-0001.json",
+  "status": "ACTIVE_POINTER"
+}
