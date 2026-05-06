@@ -1,0 +1,32 @@
+{
+  "object_type": "AdmissoriumReleaseSeal",
+  "seal_id": "admissorium-v050-release-seal-0001",
+  "status": "SEALED",
+  "sealed_release": "v0.5.0",
+  "sealed_release_target_commit": "5e9fcaf87e182d3a5620272f59450277c198f8e7",
+  "release_pointer_ref": "status/current/admissorium-release-pointer.json",
+  "release_url": "https://github.com/Verifrax/ADMISSORIUM/releases/tag/v0.5.0",
+  "status_surface": "Verifrax/VERIFRAX-STATUS",
+  "source_repository": "Verifrax/ADMISSORIUM",
+  "source_role": "ADMISSIBILITY_ENFORCEMENT_IMPLEMENTATION",
+  "truth_warning": "STATUS_SURFACE_NOT_TRUTH_SOURCE",
+  "authority_warning": "RELEASE_SEAL_DOES_NOT_AUTHOR_ADMISSIBILITY_LAW",
+  "boundary": {
+    "admissorium_does_not_decide_truth": true,
+    "admissorium_does_not_publish_packages": true,
+    "admissorium_does_not_mutate_current_truth_objects": true,
+    "admissorium_enforces_admissibility_against_accepted_truth": true
+  },
+  "sealed_after": [
+    "ADMISSORIUM#38 CLAIM_CLASS_ADMISSION_REQUIRED",
+    "ADMISSORIUM#39 ACCEPTED_EPOCH_REQUIRED",
+    "ADMISSORIUM#40 AUTHORITY_FREEZE_REQUIRED",
+    "ADMISSORIUM#41 VERIFICATION_RESULT_REQUIRED",
+    "ADMISSORIUM#42 RECOGNITION_OBJECT_REQUIRED",
+    "ADMISSORIUM#43 RECOURSE_OBJECT_REQUIRED",
+    "ADMISSORIUM#44 CONTINUITY_TRANSFER_REQUIRED",
+    "ADMISSORIUM#45 ACTIVE_HISTORICAL_TRUTH_TYPING_REQUIRED",
+    "ADMISSORIUM#46 Release ADMISSORIUM v0.5.0",
+    "VERIFRAX-STATUS#20 ADMISSORIUM v0.5.0 release pointer"
+  ]
+}

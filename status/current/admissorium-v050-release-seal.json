@@ -1,0 +1,10 @@
+{
+  "object_type": "StatusPointer",
+  "status": "ACTIVE_POINTER",
+  "current_seal_id": "admissorium-v050-release-seal-0001",
+  "current_seal_ref": "seals/current/admissorium-v050-release-seal-0001.json",
+  "current_release": "v0.5.0",
+  "target_commit": "5e9fcaf87e182d3a5620272f59450277c198f8e7",
+  "truth_warning": "STATUS_SURFACE_NOT_TRUTH_SOURCE",
+  "authority_warning": "STATUS_POINTER_DOES_NOT_AUTHOR_ADMISSIBILITY_LAW"
+}
