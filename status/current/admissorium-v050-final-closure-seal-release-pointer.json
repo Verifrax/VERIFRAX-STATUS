@@ -1,0 +1,22 @@
+{
+  "object_type": "StatusPointer",
+  "pointer_id": "admissorium-v050-final-closure-seal-release-pointer-0001",
+  "status": "ACTIVE_POINTER",
+  "current_release": "admissorium-v050-final-closure-seal-0001",
+  "current_release_url": "https://github.com/Verifrax/VERIFRAX-STATUS/releases/tag/admissorium-v050-final-closure-seal-0001",
+  "target_commit": "655c872b89248289bf29dc57161a3c9fdf30f572",
+  "points_to": {
+    "seal_ref": "seals/current/admissorium-v050-final-closure-seal-0001.json",
+    "status_ref": "status/current/admissorium-v050-final-closure-seal.json",
+    "release_tag": "admissorium-v050-final-closure-seal-0001"
+  },
+  "boundary": {
+    "status_pointer_not_truth_source": true,
+    "status_pointer_does_not_author_admissibility_law": true,
+    "status_pointer_does_not_mutate_accepted_truth": true,
+    "status_pointer_does_not_mutate_chain_objects": true,
+    "status_pointer_does_not_publish_packages": true,
+    "admissorium_does_not_publish_packages": true,
+    "admissorium_enforces_admissibility_against_accepted_truth": true
+  }
+}
