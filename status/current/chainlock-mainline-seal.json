@@ -1,0 +1,63 @@
+{
+  "status_object": "ChainlockMainlineSeal",
+  "status": "SEALED",
+  "seal_id": "chainlock-mainline-seal-0001",
+  "sealed_at_utc": "2026-05-06T11:34:30Z",
+  "chain_lock": "minimum-object-chain-lock-0001",
+  "chain_lock_ref": "https://github.com/Verifrax/ORBISTIUM/blob/main/chains/current/minimum-object-chain-lock-0001.json",
+  "admissions_ref": "https://github.com/Verifrax/.github/blob/main/governance/ADMISSIONS.json",
+  "replay_bundle_ref": "https://github.com/Verifrax/VERIFRAX/blob/main/replay/current/replay-bundle-0001.json",
+  "projection_lock_ref": "https://github.com/Verifrax/CONSONORIUM/blob/main/projections/current/projection-lock-0001.json",
+  "projection_convergence_ref": "https://github.com/Verifrax/VERIFRAX-STATUS/blob/main/status/current/projection-convergence.json",
+  "merged_prs": {
+    ".github": {
+      "pr": 44,
+      "merge_commit": "231b329689af52ae73f26368f28de2d768cb6255"
+    },
+    "ORBISTIUM": {
+      "pr": 40,
+      "merge_commit": "0380a3c409a5b28c037fdd46f3000b857c265155"
+    },
+    "VERIFRAX": {
+      "pr": 342,
+      "merge_commit": "979e9e7d4c9d60741554e770f315dd16e80de216"
+    },
+    "CONSONORIUM": {
+      "pr": 31,
+      "merge_commit": "7ad8ec7f11cda8e9740693011948887d4c608835"
+    },
+    "ADMISSORIUM": {
+      "pr": 37,
+      "merge_commit": "b20602b9713cb17516aee89bca85403846bb6491"
+    },
+    "VERIFRAX-WWW": {
+      "pr": 84,
+      "merge_commit": "c9968db1d469d02e8fa7dce566a1301b6bb1db55"
+    },
+    "VERIFRAX-STATUS": {
+      "pr": 17,
+      "merge_commit": "5187b111117227a10d1407a0d594f68b208cde59"
+    }
+  },
+  "mainline_heads": {
+    ".github": "231b329689af52ae73f26368f28de2d768cb6255",
+    "ORBISTIUM": "0380a3c409a5b28c037fdd46f3000b857c265155",
+    "VERIFRAX": "979e9e7d4c9d60741554e770f315dd16e80de216",
+    "CONSONORIUM": "7ad8ec7f11cda8e9740693011948887d4c608835",
+    "ADMISSORIUM": "b20602b9713cb17516aee89bca85403846bb6491",
+    "VERIFRAX-WWW": "c9968db1d469d02e8fa7dce566a1301b6bb1db55",
+    "VERIFRAX-STATUS": "5187b111117227a10d1407a0d594f68b208cde59"
+  },
+  "count_policy": {
+    "governed_repository_count": 35,
+    "public_repository_count": 36,
+    "sovereign_chamber_count": 9,
+    "host_count": 12,
+    "npm_package_count": 18,
+    "core_package_order_count": 16,
+    "pypi_package_boundary_count": 1,
+    "private_internal_package_count": 1
+  },
+  "verdict": "CHAINLOCK_MAINLINE_SEALED",
+  "truth_warning": "STATUS_SURFACE_NOT_TRUTH_SOURCE"
+}
