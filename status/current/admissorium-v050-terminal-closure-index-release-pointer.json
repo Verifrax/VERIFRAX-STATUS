@@ -1,0 +1,27 @@
+{
+  "admissorium_release": {
+    "repository": "Verifrax/ADMISSORIUM",
+    "tag": "v0.5.0",
+    "target_commit": "5e9fcaf87e182d3a5620272f59450277c198f8e7"
+  },
+  "boundary": {
+    "admissorium_does_not_publish_packages": true,
+    "admissorium_enforces_admissibility_against_accepted_truth": true,
+    "status_pointer_does_not_author_admissibility_law": true,
+    "status_pointer_does_not_mutate_accepted_truth": true,
+    "status_pointer_does_not_mutate_chain_objects": true,
+    "status_pointer_does_not_publish_packages": true,
+    "status_pointer_not_truth_source": true
+  },
+  "object_type": "StatusPointer",
+  "pointer_id": "admissorium-v050-terminal-closure-index-release-pointer-0001",
+  "points_to": {
+    "release_repository": "Verifrax/VERIFRAX-STATUS",
+    "release_tag": "admissorium-v050-terminal-closure-index-0001",
+    "release_target_commit": "3f20b9ff85ac54f7b579459c4f524ca1081ef24d",
+    "release_url": "https://github.com/Verifrax/VERIFRAX-STATUS/releases/tag/admissorium-v050-terminal-closure-index-0001",
+    "status_index_ref": "status/current/admissorium-v050-terminal-closure-index.json"
+  },
+  "status": "ACTIVE_POINTER",
+  "subject": "ADMISSORIUM v0.5.0 terminal closure index release"
+}
