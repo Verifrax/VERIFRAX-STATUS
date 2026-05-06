@@ -1,0 +1,19 @@
+{
+  "status_object": "ProjectionConvergenceStatus",
+  "status": "PASS",
+  "projection_convergence": "PASS",
+  "chain_lock": "minimum-object-chain-lock-0001",
+  "chain_lock_ref": "https://github.com/Verifrax/ORBISTIUM/blob/main/chains/current/minimum-object-chain-lock-0001.json",
+  "admissions": "ADMISSIONS.json",
+  "admissions_ref": "https://github.com/Verifrax/.github/blob/main/governance/ADMISSIONS.json",
+  "governed_repository_count": 35,
+  "public_repository_count": 36,
+  "sovereign_chamber_count": 9,
+  "host_count": 12,
+  "npm_package_count": 18,
+  "core_package_order_count": 16,
+  "pypi_package_boundary_count": 1,
+  "private_internal_package_count": 1,
+  "projection_drift": 0,
+  "truth_warning": "STATUS_SURFACE_NOT_TRUTH_SOURCE"
+}
