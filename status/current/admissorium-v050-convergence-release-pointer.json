@@ -1,0 +1,22 @@
+{
+  "object_type": "StatusReleasePointer",
+  "status": "ACTIVE_POINTER",
+  "pointer_id": "admissorium-v050-convergence-release-pointer",
+  "subject": "ADMISSORIUM v0.5.0 convergence index release",
+  "current_release": "admissorium-v050-convergence-index-0001",
+  "current_release_url": "https://github.com/Verifrax/VERIFRAX-STATUS/releases/tag/admissorium-v050-convergence-index-0001",
+  "target_commit": "99c60ea3b55505094fd8c1adcb56d6fd8e3ae333",
+  "convergence_index_ref": "status/current/admissorium-v050-convergence-index.json",
+  "release_pointer_ref": "status/current/admissorium-release-pointer.json",
+  "release_seal_ref": "status/current/admissorium-v050-release-seal.json",
+  "release_seal_object_ref": "seals/current/admissorium-v050-release-seal-0001.json",
+  "truth_warning": "STATUS_SURFACE_NOT_TRUTH_SOURCE",
+  "authority_warning": "STATUS_POINTER_DOES_NOT_AUTHOR_ADMISSIBILITY_LAW",
+  "boundary": {
+    "status_surface_not_truth_source": true,
+    "status_pointer_does_not_author_admissibility_law": true,
+    "status_pointer_does_not_mutate_accepted_truth": true,
+    "admissorium_does_not_publish_packages": true,
+    "admissorium_enforces_admissibility_against_accepted_truth": true
+  }
+}
