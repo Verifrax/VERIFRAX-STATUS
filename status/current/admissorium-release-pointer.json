@@ -1,0 +1,21 @@
+{
+  "object_type": "StatusPointer",
+  "status": "ACTIVE_POINTER",
+  "id": "admissorium-release-pointer",
+  "current_release": "v0.5.0",
+  "current_release_url": "https://github.com/Verifrax/ADMISSORIUM/releases/tag/v0.5.0",
+  "target_commit": "5e9fcaf87e182d3a5620272f59450277c198f8e7",
+  "repository": "Verifrax/ADMISSORIUM",
+  "truth_warning": "STATUS_SURFACE_NOT_TRUTH_SOURCE",
+  "authority_warning": "STATUS_POINTER_DOES_NOT_AUTHOR_ADMISSIBILITY_LAW",
+  "release_boundary": {
+    "admissorium_does_not_define_law": true,
+    "admissorium_does_not_accept_state": true,
+    "admissorium_does_not_issue_authority": true,
+    "admissorium_does_not_verify_as_final_source": true,
+    "admissorium_does_not_recognize_terminal_truth": true,
+    "admissorium_does_not_assign_recourse": true,
+    "admissorium_does_not_publish_packages": true,
+    "admissorium_enforces_admissibility_against_accepted_truth": true
+  }
+}
