@@ -1,0 +1,41 @@
+{
+  "object_type": "StatusClosureSeal",
+  "seal_id": "admissorium-v050-final-closure-seal-0001",
+  "status": "SEALED",
+  "sealed_subject": "ADMISSORIUM v0.5.0 final closure pointer",
+  "current_release": "v0.5.0",
+  "admissorium_target_commit": "5e9fcaf87e182d3a5620272f59450277c198f8e7",
+  "final_closure_pointer_ref": "status/current/admissorium-v050-final-closure-pointer.json",
+  "final_closure_pointer_release": "admissorium-v050-final-closure-pointer-0001",
+  "final_closure_pointer_release_target": "7bfabdfae9d7a91e6d01b000e29f55177f3414bf",
+  "closure_components": {
+    "admissorium_release": "v0.5.0",
+    "release_pointer": "status/current/admissorium-release-pointer.json",
+    "release_seal": "admissorium-v050-release-seal-0001",
+    "convergence_index": "status/current/admissorium-v050-convergence-index.json",
+    "convergence_index_release": "admissorium-v050-convergence-index-0001",
+    "convergence_release_pointer": "status/current/admissorium-v050-convergence-release-pointer.json",
+    "convergence_release_pointer_release": "admissorium-v050-convergence-release-pointer-0001",
+    "final_closure_pointer": "status/current/admissorium-v050-final-closure-pointer.json",
+    "final_closure_pointer_release": "admissorium-v050-final-closure-pointer-0001"
+  },
+  "invariant_floor": {
+    "claim_class_admission_required": true,
+    "accepted_epoch_required": true,
+    "authority_freeze_required": true,
+    "verification_result_required": true,
+    "recognition_object_required": true,
+    "recourse_object_required": true,
+    "continuity_transfer_required": true,
+    "active_historical_truth_typing_required": true
+  },
+  "boundary": {
+    "status_surface_not_truth_source": true,
+    "status_seal_does_not_author_admissibility_law": true,
+    "status_seal_does_not_mutate_accepted_truth": true,
+    "status_seal_does_not_mutate_chain_objects": true,
+    "status_seal_does_not_publish_packages": true,
+    "admissorium_does_not_publish_packages": true,
+    "admissorium_enforces_admissibility_against_accepted_truth": true
+  }
+}
