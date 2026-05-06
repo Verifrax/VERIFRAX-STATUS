@@ -1,0 +1,9 @@
+{
+  "object_type": "StatusSealPointer",
+  "pointer_id": "admissorium-v050-final-closure-seal",
+  "status": "ACTIVE_POINTER",
+  "current_seal_id": "admissorium-v050-final-closure-seal-0001",
+  "current_seal_ref": "seals/current/admissorium-v050-final-closure-seal-0001.json",
+  "truth_warning": "STATUS_SURFACE_NOT_TRUTH_SOURCE",
+  "authority_warning": "STATUS_SEAL_DOES_NOT_AUTHOR_ADMISSIBILITY_LAW"
+}
