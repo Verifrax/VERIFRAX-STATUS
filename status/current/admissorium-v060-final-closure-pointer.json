@@ -1,0 +1,41 @@
+{
+  "object_type": "StatusClosurePointer",
+  "pointer_id": "admissorium-v060-final-closure-pointer",
+  "status": "ACTIVE_POINTER",
+  "current_release": "v0.6.0",
+  "admissorium_release_tag": "v0.6.0",
+  "admissorium_target_commit": "7ac9e1746e1f1c59f264db01c09f7064ee75677c",
+  "status_target_commit": "1da445c387a939a7881cdea7432167d5b52e44a3",
+  "status_refs": {
+    "release_pointer": "status/current/admissorium-release-pointer.json",
+    "release_seal": "status/current/admissorium-v060-release-seal.json",
+    "convergence_index": "status/current/admissorium-v060-convergence-index.json",
+    "convergence_release_pointer": "status/current/admissorium-v060-convergence-release-pointer.json"
+  },
+  "status_releases": {
+    "release_seal": "admissorium-v060-release-seal-0001",
+    "convergence_index": "admissorium-v060-convergence-index-0001",
+    "convergence_release_pointer": "admissorium-v060-convergence-release-pointer-0001"
+  },
+  "invariant_floor": {
+    "accepted_epoch_required": true,
+    "claim_class_admission_required": true,
+    "authority_freeze_required": true,
+    "verification_result_required": true,
+    "recognition_object_required": true,
+    "recourse_object_required": true,
+    "continuity_transfer_required": true,
+    "active_historical_truth_typing_required": true,
+    "cognition_boundary_required": true
+  },
+  "truth_warning": "STATUS_SURFACE_NOT_TRUTH_SOURCE",
+  "authority_warning": "STATUS_POINTER_DOES_NOT_AUTHOR_ADMISSIBILITY_LAW",
+  "boundary": {
+    "status_surface_not_truth_source": true,
+    "status_pointer_does_not_author_admissibility_law": true,
+    "status_pointer_does_not_mutate_accepted_truth": true,
+    "status_pointer_does_not_mutate_chain_objects": true,
+    "admissorium_does_not_publish_packages": true,
+    "admissorium_enforces_admissibility_against_accepted_truth": true
+  }
+}
