@@ -1,0 +1,29 @@
+{
+  "object_type": "AdmissoriumV060TerminalClosureSealReleasePointer",
+  "status": "READ_ONLY_STATUS_POINTER",
+  "current_release": "admissorium-v060-terminal-closure-seal-0001",
+  "target_commit": "fe0dfbb604d83b3a87a334a54941f31d73fadd40",
+  "release_ref": "https://github.com/Verifrax/VERIFRAX-STATUS/releases/tag/admissorium-v060-terminal-closure-seal-0001",
+  "source_status_ref": "status/current/admissorium-v060-terminal-closure-seal.json",
+  "source_seal_ref": "seals/current/admissorium-v060-terminal-closure-seal-0001.json",
+  "release_sequence": [
+    "v0.6.0",
+    "admissorium-v060-release-seal-0001",
+    "admissorium-v060-convergence-index-0001",
+    "admissorium-v060-convergence-release-pointer-0001",
+    "admissorium-v060-final-closure-pointer-0001",
+    "admissorium-v060-final-closure-seal-0001",
+    "admissorium-v060-final-closure-seal-release-pointer-0001",
+    "admissorium-v060-terminal-closure-index-0001",
+    "admissorium-v060-terminal-closure-index-release-pointer-0001",
+    "admissorium-v060-terminal-closure-seal-0001"
+  ],
+  "boundary": {
+    "status_pointer_does_not_author_admissibility_law": true,
+    "status_pointer_does_not_mutate_accepted_truth": true,
+    "status_pointer_does_not_publish_packages": true,
+    "status_pointer_does_not_author_chain_objects": true,
+    "admissorium_does_not_publish_packages": true,
+    "admissorium_enforces_admissibility_against_accepted_truth": true
+  }
+}
