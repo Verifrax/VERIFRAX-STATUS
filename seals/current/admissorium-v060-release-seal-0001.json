@@ -1,0 +1,25 @@
+{
+  "object": "ADMISSORIUM_V060_RELEASE_SEAL",
+  "version": "1.0.0",
+  "release": "v0.6.0",
+  "release_target_commit": "7ac9e1746e1f1c59f264db01c09f7064ee75677c",
+  "status_pointer": "status/current/admissorium-release-pointer.json",
+  "status_pointer_commit": "42fd6031c5286e4c695fa8b8b2aee37fe7469c33",
+  "sealed_invariants": [
+    "COGNITION_BOUNDARY_REQUIRED",
+    "ACTIVE_HISTORICAL_TRUTH_TYPING_REQUIRED",
+    "CONTINUITY_TRANSFER_REQUIRED",
+    "RECOURSE_OBJECT_REQUIRED",
+    "RECOGNITION_OBJECT_REQUIRED",
+    "VERIFICATION_RESULT_REQUIRED"
+  ],
+  "boundary": {
+    "status_surface_not_truth_source": true,
+    "status_seal_does_not_author_admissibility_law": true,
+    "status_seal_does_not_mutate_accepted_truth": true,
+    "status_seal_does_not_author_chain_objects": true,
+    "admissorium_does_not_publish_packages": true,
+    "admissorium_enforces_admissibility_against_accepted_truth": true
+  },
+  "notes": "Read-only STATUS seal for ADMISSORIUM v0.6.0 after release pointer convergence."
+}

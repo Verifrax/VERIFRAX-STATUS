@@ -1,0 +1,8 @@
+{
+  "object": "ADMISSORIUM_V060_RELEASE_SEAL_POINTER",
+  "current": "seals/current/admissorium-v060-release-seal-0001.json",
+  "release": "v0.6.0",
+  "release_target_commit": "7ac9e1746e1f1c59f264db01c09f7064ee75677c",
+  "truth_warning": "STATUS_SURFACE_NOT_TRUTH_SOURCE",
+  "authority_warning": "STATUS_SEAL_DOES_NOT_AUTHOR_ADMISSIBILITY_LAW"
+}
