@@ -1,0 +1,32 @@
+{
+  "object_type": "StatusConvergenceIndex",
+  "status": "CONVERGED_STATUS_INDEX",
+  "index_id": "admissorium-v060-convergence-index",
+  "subject": "ADMISSORIUM v0.6.0 release convergence",
+  "current_release": "v0.6.0",
+  "admissorium_target_commit": "7ac9e1746e1f1c59f264db01c09f7064ee75677c",
+  "status_pointer_ref": "status/current/admissorium-release-pointer.json",
+  "release_seal_ref": "status/current/admissorium-v060-release-seal.json",
+  "release_seal_object_ref": "seals/current/admissorium-v060-release-seal-0001.json",
+  "release_seal_tag": "admissorium-v060-release-seal-0001",
+  "release_seal_tag_target": "693d48522caf28e8670066f621d485b5f15d709a",
+  "merged_invariant_floor": {
+    "claim_class_admission_required": true,
+    "accepted_epoch_required": true,
+    "authority_freeze_required": true,
+    "verification_result_required": true,
+    "recognition_object_required": true,
+    "recourse_object_required": true,
+    "continuity_transfer_required": true,
+    "active_historical_truth_typing_required": true,
+    "cognition_boundary_required": true
+  },
+  "boundary": {
+    "status_surface_not_truth_source": true,
+    "status_index_does_not_author_admissibility_law": true,
+    "status_index_does_not_mutate_accepted_truth": true,
+    "status_index_does_not_author_chain_objects": true,
+    "admissorium_does_not_publish_packages": true,
+    "admissorium_enforces_admissibility_against_accepted_truth": true
+  }
+}
