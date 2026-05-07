@@ -1,0 +1,27 @@
+{
+  "object_type": "StatusPointer",
+  "pointer_id": "admissorium-v060-terminal-closure-index-release-pointer-0001",
+  "status": "ACTIVE_POINTER",
+  "subject": "ADMISSORIUM v0.6.0 terminal closure index release",
+  "admissorium_release": {
+    "repository": "Verifrax/ADMISSORIUM",
+    "tag": "v0.6.0",
+    "target_commit": "7ac9e1746e1f1c59f264db01c09f7064ee75677c"
+  },
+  "points_to": {
+    "release_repository": "Verifrax/VERIFRAX-STATUS",
+    "release_tag": "admissorium-v060-terminal-closure-index-0001",
+    "release_target_commit": "a1a207f4678d6432098c238ee05d74515799b28b",
+    "release_url": "https://github.com/Verifrax/VERIFRAX-STATUS/releases/tag/admissorium-v060-terminal-closure-index-0001",
+    "status_index_ref": "status/current/admissorium-v060-terminal-closure-index.json"
+  },
+  "boundary": {
+    "status_pointer_not_truth_source": true,
+    "status_pointer_does_not_author_admissibility_law": true,
+    "status_pointer_does_not_mutate_accepted_truth": true,
+    "status_pointer_does_not_mutate_chain_objects": true,
+    "status_pointer_does_not_publish_packages": true,
+    "admissorium_does_not_publish_packages": true,
+    "admissorium_enforces_admissibility_against_accepted_truth": true
+  }
+}
