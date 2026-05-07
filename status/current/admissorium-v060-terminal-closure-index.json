@@ -1,0 +1,70 @@
+{
+  "boundary": {
+    "admissorium_does_not_publish_packages": true,
+    "admissorium_enforces_admissibility_against_accepted_truth": true,
+    "status_index_does_not_author_admissibility_law": true,
+    "status_index_does_not_mutate_accepted_truth": true,
+    "status_index_does_not_mutate_chain_objects": true,
+    "status_index_does_not_publish_packages": true,
+    "status_index_not_truth_source": true
+  },
+  "index_id": "admissorium-v060-terminal-closure-index-0001",
+  "invariant_floor": [
+    "CLAIM_CLASS_ADMISSION_REQUIRED",
+    "ACCEPTED_EPOCH_REQUIRED",
+    "AUTHORITY_FREEZE_REQUIRED",
+    "VERIFICATION_RESULT_REQUIRED",
+    "RECOGNITION_OBJECT_REQUIRED",
+    "RECOURSE_OBJECT_REQUIRED",
+    "CONTINUITY_TRANSFER_REQUIRED",
+    "ACTIVE_HISTORICAL_TRUTH_TYPING_REQUIRED",
+    "COGNITION_BOUNDARY_REQUIRED"
+  ],
+  "object_type": "StatusIndex",
+  "release": {
+    "release_url": "https://github.com/Verifrax/ADMISSORIUM/releases/tag/v0.6.0",
+    "repository": "Verifrax/ADMISSORIUM",
+    "tag": "v0.6.0",
+    "target_commit": "7ac9e1746e1f1c59f264db01c09f7064ee75677c"
+  },
+  "status": "ACTIVE_INDEX",
+  "status_chain": [
+    {
+      "ref": "status/current/admissorium-release-pointer.json",
+      "stage": "release_pointer"
+    },
+    {
+      "ref": "status/current/admissorium-v060-release-seal.json",
+      "release_tag": "admissorium-v060-release-seal-0001",
+      "seal_ref": "seals/current/admissorium-v060-release-seal-0001.json",
+      "stage": "release_seal"
+    },
+    {
+      "ref": "status/current/admissorium-v060-convergence-index.json",
+      "release_tag": "admissorium-v060-convergence-index-0001",
+      "stage": "convergence_index"
+    },
+    {
+      "ref": "status/current/admissorium-v060-convergence-release-pointer.json",
+      "release_tag": "admissorium-v060-convergence-release-pointer-0001",
+      "stage": "convergence_release_pointer"
+    },
+    {
+      "ref": "status/current/admissorium-v060-final-closure-pointer.json",
+      "release_tag": "admissorium-v060-final-closure-pointer-0001",
+      "stage": "final_closure_pointer"
+    },
+    {
+      "ref": "status/current/admissorium-v060-final-closure-seal.json",
+      "release_tag": "admissorium-v060-final-closure-seal-0001",
+      "seal_ref": "seals/current/admissorium-v060-final-closure-seal-0001.json",
+      "stage": "final_closure_seal"
+    },
+    {
+      "ref": "status/current/admissorium-v060-final-closure-seal-release-pointer.json",
+      "release_tag": "admissorium-v060-final-closure-seal-release-pointer-0001",
+      "stage": "final_closure_seal_release_pointer"
+    }
+  ],
+  "subject": "ADMISSORIUM v0.6.0 terminal closure"
+}
