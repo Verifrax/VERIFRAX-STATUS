@@ -1,0 +1,38 @@
+{
+  "object_type": "AdmissoriumV050FixedPointFinality",
+  "status": "READ_ONLY_STATUS_FINALITY",
+  "admissorium_release": "v0.5.0",
+  "admissorium_release_commit": "5e9fcaf87e182d3a5620272f59450277c198f8e7",
+  "terminal_input": {
+    "release_tag": "admissorium-v050-terminal-closure-seal-release-pointer-0001",
+    "target_commit": "4acea51b9e57d903f044a6eca18c1d2d76687abe",
+    "object_path": "status/current/admissorium-v050-terminal-closure-seal-release-pointer.json"
+  },
+  "closed_chain": [
+    "v0.5.0",
+    "admissorium-v050-release-seal-0001",
+    "admissorium-v050-convergence-index-0001",
+    "admissorium-v050-convergence-release-pointer-0001",
+    "admissorium-v050-final-closure-pointer-0001",
+    "admissorium-v050-final-closure-seal-0001",
+    "admissorium-v050-final-closure-seal-release-pointer-0001",
+    "admissorium-v050-terminal-closure-index-0001",
+    "admissorium-v050-terminal-closure-index-release-pointer-0001",
+    "admissorium-v050-terminal-closure-seal-0001",
+    "admissorium-v050-terminal-closure-seal-release-pointer-0001"
+  ],
+  "fixed_point_rule": {
+    "recursive_pointer_chain_closed": true,
+    "no_child_status_pointer_required_for_this_finality_object": true,
+    "no_child_release_pointer_required_for_this_finality_release": true,
+    "reason": "This object terminates the status recursion by binding the last released terminal seal release pointer as the fixed point."
+  },
+  "boundary": {
+    "status_finality_does_not_author_admissibility_law": true,
+    "status_finality_does_not_mutate_accepted_truth": true,
+    "status_finality_does_not_publish_packages": true,
+    "status_finality_does_not_author_chain_objects": true,
+    "admissorium_does_not_publish_packages": true,
+    "admissorium_enforces_admissibility_against_accepted_truth": true
+  }
+}
