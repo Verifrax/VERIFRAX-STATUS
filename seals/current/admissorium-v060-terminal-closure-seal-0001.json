@@ -1,0 +1,51 @@
+{
+  "object_type": "StatusSeal",
+  "seal_id": "admissorium-v060-terminal-closure-seal-0001",
+  "status": "ACTIVE_SEAL",
+  "subject": "ADMISSORIUM v0.6.0 terminal closure",
+  "closure_state": "TERMINAL",
+  "admissorium_release": {
+    "repository": "Verifrax/ADMISSORIUM",
+    "tag": "v0.6.0",
+    "target_commit": "7ac9e1746e1f1c59f264db01c09f7064ee75677c"
+  },
+  "terminal_inputs": {
+    "release_pointer_ref": "status/current/admissorium-release-pointer.json",
+    "release_seal_ref": "status/current/admissorium-v060-release-seal.json",
+    "convergence_index_ref": "status/current/admissorium-v060-convergence-index.json",
+    "convergence_release_pointer_ref": "status/current/admissorium-v060-convergence-release-pointer.json",
+    "final_closure_pointer_ref": "status/current/admissorium-v060-final-closure-pointer.json",
+    "final_closure_seal_ref": "status/current/admissorium-v060-final-closure-seal.json",
+    "final_closure_seal_release_pointer_ref": "status/current/admissorium-v060-final-closure-seal-release-pointer.json",
+    "terminal_closure_index_ref": "status/current/admissorium-v060-terminal-closure-index.json",
+    "terminal_closure_index_release_pointer_ref": "status/current/admissorium-v060-terminal-closure-index-release-pointer.json"
+  },
+  "release_tags": {
+    "admissorium_release": "v0.6.0",
+    "release_seal": "admissorium-v060-release-seal-0001",
+    "convergence_index": "admissorium-v060-convergence-index-0001",
+    "convergence_release_pointer": "admissorium-v060-convergence-release-pointer-0001",
+    "final_closure_pointer": "admissorium-v060-final-closure-pointer-0001",
+    "final_closure_seal": "admissorium-v060-final-closure-seal-0001",
+    "final_closure_seal_release_pointer": "admissorium-v060-final-closure-seal-release-pointer-0001",
+    "terminal_closure_index": "admissorium-v060-terminal-closure-index-0001",
+    "terminal_closure_index_release_pointer": "admissorium-v060-terminal-closure-index-release-pointer-0001"
+  },
+  "terminal_assertions": {
+    "all_admissorium_v060_status_closure_inputs_are_recorded": true,
+    "terminal_closure_index_release_pointer_is_recorded": true,
+    "no_status_surface_authors_accepted_truth": true,
+    "no_status_surface_authors_admissibility_law": true,
+    "no_status_surface_mutates_chain_objects": true,
+    "no_status_surface_publishes_packages": true
+  },
+  "boundary": {
+    "status_seal_not_truth_source": true,
+    "status_seal_does_not_author_admissibility_law": true,
+    "status_seal_does_not_mutate_accepted_truth": true,
+    "status_seal_does_not_mutate_chain_objects": true,
+    "status_seal_does_not_publish_packages": true,
+    "admissorium_does_not_publish_packages": true,
+    "admissorium_enforces_admissibility_against_accepted_truth": true
+  }
+}
