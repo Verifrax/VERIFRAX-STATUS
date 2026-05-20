@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>VERIFRAX System Control Map</title>
+  <style>
+    body{margin:0;background:#0f1115;color:#f4f5f7;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
+    main{max-width:1080px;margin:0 auto;padding:48px 20px 72px}
+    h1{font-size:clamp(38px,7vw,78px);line-height:.92;margin:0;letter-spacing:-.05em}
+    .muted{color:#a4acb8}.panel{border:1px solid #303846;background:#171b22;border-radius:18px;padding:22px;margin-top:22px}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}@media(max-width:760px){.grid{grid-template-columns:1fr}}
+    a{color:#8ab4ff}.row{display:flex;justify-content:space-between;gap:12px;border-top:1px solid #303846;padding:10px 0}
+    code{border:1px solid #303846;border-radius:8px;padding:2px 6px}
+  </style>
+</head>
+<body>
+<main>
+  <div class="muted">VERIFRAX / system-control</div>
+  <h1>System control map.</h1>
+  <p class="muted">This is not a completion claim. It is the live routing and status-control ledger for the public VERIFRAX perimeter.</p>
+
+  <section class="panel">
+    <h2>Truth state</h2>
+    <div class="row"><strong>APPLY</strong><span>live intake surface green</span></div>
+    <div class="row"><strong>VERIFRAX system</strong><span>not complete</span></div>
+    <div class="row"><strong>Current state</strong><code>SYSTEM_CONTROL_MAP_OPEN</code></div>
+    <div class="row"><strong>Forbidden claim</strong><code>APPLY_SUPER_LEVEL_UP_COMPLETE</code></div>
+  </section>
+
+  <section class="panel">
+    <h2>Live host routing</h2>
+    <div class="grid">
+      <a href="https://www.verifrax.net/">Root — public router</a>
+      <a href="https://docs.verifrax.net/">Docs — explanatory boundary</a>
+      <a href="https://proof.verifrax.net/">Proof — proof publication</a>
+      <a href="https://verify.verifrax.net/">Verify — public verification</a>
+      <a href="https://auctoriseal.verifrax.net/">Authority — authority issuance</a>
+      <a href="https://corpiform.verifrax.net/">Runtime — governed runtime</a>
+      <a href="https://api.verifrax.net/">API — execution API</a>
+      <a href="https://sigillarium.verifrax.net/">Archive — archive/reference</a>
+      <a href="https://apply.verifrax.net/">Apply — intake</a>
+      <a href="https://status.verifrax.net/">Status — global status board</a>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Machine-readable control object</h2>
+    <p><a href="/system-control.json">/system-control.json</a></p>
+    <p><a href="/data/verifrax-system-control.json">/data/verifrax-system-control.json</a></p>
+  </section>
+</main>
+</body>
+</html>
