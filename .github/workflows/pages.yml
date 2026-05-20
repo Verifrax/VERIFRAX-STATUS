@@ -42,6 +42,10 @@ jobs:
         shell: bash
         run: npm run control:replay
 
+      - name: Generate public control fixed point
+        shell: bash
+        run: npm run control:finality
+
       - name: Prepare artifact
         shell: bash
         run: |
@@ -72,6 +76,8 @@ jobs:
           test -f dist/control-receipt/receipt.json
           test -f dist/control-receipt/replay.html
           test -f dist/control-receipt/replay.json
+          test -f dist/control-receipt/finality.html
+          test -f dist/control-receipt/finality.json
           grep -Fx "status.verifrax.net" dist/CNAME
           grep -q "SYSTEM_CONTROL_MAP_OPEN" dist/system-control.json
           grep -q "SYSTEM_CONTROL_MAP_OPEN" dist/status.json
@@ -79,6 +85,7 @@ jobs:
           grep -q "PUBLIC_PERIMETER_GREEN" dist/perimeter/status.json
           grep -q "VERIFRAX_PUBLIC_CONTROL_RECEIPT_GREEN" dist/control-receipt/receipt.json
           grep -q "VERIFRAX_PUBLIC_CONTROL_REPLAY_GREEN" dist/control-receipt/replay.json
+          grep -q "VERIFRAX_PUBLIC_CONTROL_FIXED_POINT_GREEN" dist/control-receipt/finality.json
 
       - uses: actions/upload-pages-artifact@v3
         with:

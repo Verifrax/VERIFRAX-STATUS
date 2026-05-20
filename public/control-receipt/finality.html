@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VERIFRAX Public Control Fixed Point</title>
+<style>
+body{margin:0;background:#0f1115;color:#f4f5f7;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
+main{max-width:1180px;margin:0 auto;padding:48px 20px 72px}
+h1{font-size:clamp(38px,7vw,78px);line-height:.92;margin:0;letter-spacing:-.05em}
+.panel{border:1px solid #303846;background:#171b22;border-radius:18px;padding:22px;margin-top:22px}
+table{width:100%;border-collapse:collapse}td,th{border-top:1px solid #303846;text-align:left;padding:10px;vertical-align:top}
+a{color:#8ab4ff}code{border:1px solid #303846;border-radius:8px;padding:2px 6px}.muted{color:#a4acb8}
+</style>
+</head>
+<body>
+<main>
+<div class="muted">VERIFRAX / public-control-fixed-point</div>
+<h1>Public control fixed point.</h1>
+<p class="muted">Replay-verified public control posture. This is not system completion.</p>
+<section class="panel">
+<h2>VERIFRAX_PUBLIC_CONTROL_FIXED_POINT_GREEN</h2>
+<p>Generated: <code>2026-05-20T19:43:10.964Z</code></p>
+<p>Control: <code>SYSTEM_CONTROL_MAP_OPEN</code></p>
+<p>Perimeter: <code>PUBLIC_PERIMETER_GREEN</code></p>
+<p>Receipt: <code>VERIFRAX_PUBLIC_CONTROL_RECEIPT_GREEN</code></p>
+<p>Replay: <code>VERIFRAX_PUBLIC_CONTROL_REPLAY_GREEN</code></p>
+<p>System complete: <code>false</code></p>
+<p>Machine finality: <a href="/control-receipt/finality.json">/control-receipt/finality.json</a></p>
+</section>
+<section class="panel">
+<h2>Fixed-point checks</h2>
+<table>
+<thead><tr><th>Check</th><th>Status</th><th>HTTP</th><th>URL</th><th>SHA-256</th><th>Failure</th></tr></thead>
+<tbody>
+<tr>
+<td><code>replay</code></td>
+<td>GREEN</td>
+<td>200</td>
+<td><a href="https://status.verifrax.net/control-receipt/replay.json">https://status.verifrax.net/control-receipt/replay.json</a></td>
+<td><code>e34c4c1acbd81e0693d3c4b23d8d449ef099e50ddfc775f5d50a1e577ed1037d</code></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><code>receipt</code></td>
+<td>GREEN</td>
+<td>200</td>
+<td><a href="https://status.verifrax.net/control-receipt/receipt.json">https://status.verifrax.net/control-receipt/receipt.json</a></td>
+<td><code>2f0ce8f4754926479fd61e362aedb3d61f41757b274cdefe65acece75674b25e</code></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><code>perimeter</code></td>
+<td>GREEN</td>
+<td>200</td>
+<td><a href="https://status.verifrax.net/perimeter/status.json">https://status.verifrax.net/perimeter/status.json</a></td>
+<td><code>0c3e0a801561244d9bb904db7b284dbbf064d12da771239c1cc28ff86f6ba565</code></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><code>root_control</code></td>
+<td>GREEN</td>
+<td>200</td>
+<td><a href="https://www.verifrax.net/system-control.json">https://www.verifrax.net/system-control.json</a></td>
+<td><code>016f4b5ae2356181082d35889e63fd05fe154fc686c25a42dd896733c2e3a6d4</code></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><code>root_data_control</code></td>
+<td>GREEN</td>
+<td>200</td>
+<td><a href="https://www.verifrax.net/data/verifrax-system-control.json">https://www.verifrax.net/data/verifrax-system-control.json</a></td>
+<td><code>016f4b5ae2356181082d35889e63fd05fe154fc686c25a42dd896733c2e3a6d4</code></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><code>root_page</code></td>
+<td>GREEN</td>
+<td>200</td>
+<td><a href="https://www.verifrax.net/system/">https://www.verifrax.net/system/</a></td>
+<td><code>eb3773e0bd541b54c06b535eccecdce4e1ac4e0ecadf1c8c56b2de42c54fb612</code></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><code>status_control</code></td>
+<td>GREEN</td>
+<td>200</td>
+<td><a href="https://status.verifrax.net/system-control.json">https://status.verifrax.net/system-control.json</a></td>
+<td><code>29024e44193c3bc97668719d61a47b2767393293511dbb2d72b65b3e07e20ad5</code></td>
+<td>—</td>
+</tr>
+
+<tr>
+<td><code>apply</code></td>
+<td>GREEN</td>
+<td>200</td>
+<td><a href="https://apply.verifrax.net/">https://apply.verifrax.net/</a></td>
+<td><code>1fd0526dcacac424a64abfc2adeb016a6e4d2f1817c239dfa16c0458fd2d64fa</code></td>
+<td>—</td>
+</tr></tbody>
+</table>
+</section>
+</main>
+</body>
+</html>
