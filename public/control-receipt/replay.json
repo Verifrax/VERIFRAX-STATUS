@@ -1,0 +1,264 @@
+{
+  "schema_version": "1.0.0",
+  "replay_type": "VERIFRAX_PUBLIC_CONTROL_REPLAY",
+  "generated_at": "2026-05-20T19:24:16.778Z",
+  "system": "VERIFRAX",
+  "state": "VERIFRAX_PUBLIC_CONTROL_REPLAY_GREEN",
+  "system_complete": false,
+  "control_state": "SYSTEM_CONTROL_MAP_OPEN",
+  "perimeter_state": "PUBLIC_PERIMETER_GREEN",
+  "receipt_state": "VERIFRAX_PUBLIC_CONTROL_RECEIPT_GREEN",
+  "bounded_meaning": [
+    "This replay proves public endpoint consistency at replay time.",
+    "It does not define law.",
+    "It does not accept state.",
+    "It does not issue authority.",
+    "It does not execute governed actions.",
+    "It does not verify as final source.",
+    "It does not recognize terminal truth.",
+    "It does not assign recourse.",
+    "It does not make VERIFRAX_SYSTEM_COMPLETE true."
+  ],
+  "checks": [
+    {
+      "id": "control_receipt",
+      "url": "https://status.verifrax.net/control-receipt/receipt.json",
+      "type": "json",
+      "required": [
+        "VERIFRAX_PUBLIC_CONTROL_RECEIPT",
+        "VERIFRAX_PUBLIC_CONTROL_RECEIPT_GREEN",
+        "SYSTEM_CONTROL_MAP_OPEN",
+        "PUBLIC_PERIMETER_GREEN"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 303,
+      "body_sha256": "01a3f9d34e25bf4fcd41f1c6ca25e9638bc6369ac3e687d5e9b9510bc6260075",
+      "missing_required_tokens": [],
+      "semantic_errors": [],
+      "checked_at": "2026-05-20T19:24:17.081Z"
+    },
+    {
+      "id": "control_receipt_page",
+      "url": "https://status.verifrax.net/control-receipt/",
+      "type": "html",
+      "required": [
+        "VERIFRAX_PUBLIC_CONTROL_RECEIPT_GREEN",
+        "Public control receipt"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 132,
+      "body_sha256": "98a2e2ba77047999089127c64f540ff8519af7a9b360796a1c1b452d65dd4f55",
+      "missing_required_tokens": [],
+      "semantic_errors": [],
+      "checked_at": "2026-05-20T19:24:17.213Z"
+    },
+    {
+      "id": "perimeter_status",
+      "url": "https://status.verifrax.net/perimeter/status.json",
+      "type": "json",
+      "required": [
+        "PUBLIC_PERIMETER_GREEN",
+        "SYSTEM_CONTROL_MAP_OPEN",
+        "VERIFRAX"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 231,
+      "body_sha256": "87c959f445850ed7699e46f190bfc10f6901dbb2b426510bd74c78eb2d65d8ba",
+      "missing_required_tokens": [],
+      "semantic_errors": [],
+      "checked_at": "2026-05-20T19:24:17.444Z"
+    },
+    {
+      "id": "root_control",
+      "url": "https://www.verifrax.net/system-control.json",
+      "type": "json",
+      "required": [
+        "SYSTEM_CONTROL_MAP_OPEN",
+        "PUBLIC_PERIMETER_GREEN",
+        "VERIFRAX_PUBLIC_CONTROL_RECEIPT_GREEN",
+        "https://status.verifrax.net/control-receipt/receipt.json"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 27,
+      "body_sha256": "bac9789b2866c3ce5daa0be05d35795fe8de84ec2143331a6301fe737e58a02d",
+      "missing_required_tokens": [],
+      "semantic_errors": [],
+      "checked_at": "2026-05-20T19:24:17.471Z"
+    },
+    {
+      "id": "root_control_page",
+      "url": "https://www.verifrax.net/system/",
+      "type": "html",
+      "required": [
+        "SYSTEM_CONTROL_MAP_OPEN",
+        "PUBLIC_PERIMETER_GREEN",
+        "VERIFRAX_PUBLIC_CONTROL_RECEIPT_GREEN",
+        "status.verifrax.net/control-receipt/receipt.json"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 5,
+      "body_sha256": "db6b1837d67b56cd4c8a70e1f9ba24d748dc439b066ff500fd3e5e5800c58df4",
+      "missing_required_tokens": [],
+      "semantic_errors": [],
+      "checked_at": "2026-05-20T19:24:17.476Z"
+    },
+    {
+      "id": "status_control",
+      "url": "https://status.verifrax.net/system-control.json",
+      "type": "json",
+      "required": [
+        "SYSTEM_CONTROL_MAP_OPEN",
+        "VERIFRAX"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 123,
+      "body_sha256": "29024e44193c3bc97668719d61a47b2767393293511dbb2d72b65b3e07e20ad5",
+      "missing_required_tokens": [],
+      "semantic_errors": [],
+      "checked_at": "2026-05-20T19:24:17.599Z"
+    },
+    {
+      "id": "apply_intake_boundary",
+      "url": "https://apply.verifrax.net/",
+      "type": "html",
+      "required": [
+        "Terminal intake control plane",
+        "does not publish proof",
+        "recognize terminal truth",
+        "assign recourse"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 25,
+      "body_sha256": "1fd0526dcacac424a64abfc2adeb016a6e4d2f1817c239dfa16c0458fd2d64fa",
+      "missing_required_tokens": [],
+      "semantic_errors": [],
+      "checked_at": "2026-05-20T19:24:17.624Z"
+    },
+    {
+      "id": "docs",
+      "url": "https://docs.verifrax.net/",
+      "type": "html",
+      "required": [
+        "VERIFRAX"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 26,
+      "body_sha256": "361aebbf8f9f152890e80442339f7aab9dff10d6e9f55150e6c53f26e3613236",
+      "missing_required_tokens": [],
+      "semantic_errors": [],
+      "checked_at": "2026-05-20T19:24:17.650Z"
+    },
+    {
+      "id": "proof",
+      "url": "https://proof.verifrax.net/",
+      "type": "html",
+      "required": [
+        "VERIFRAX"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 135,
+      "body_sha256": "6c8ebec4b708481d93dd4c4d2c2bc163c87ac941450308cf2769c60ad98a69be",
+      "missing_required_tokens": [],
+      "semantic_errors": [],
+      "checked_at": "2026-05-20T19:24:17.785Z"
+    },
+    {
+      "id": "verify",
+      "url": "https://verify.verifrax.net/",
+      "type": "html",
+      "required": [
+        "VERIFRAX"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 25,
+      "body_sha256": "2a737c09432ac1ac125db0f0f93d7aef2dd66299d62e9ebd0e7272e5ff3c62f7",
+      "missing_required_tokens": [],
+      "semantic_errors": [],
+      "checked_at": "2026-05-20T19:24:17.810Z"
+    },
+    {
+      "id": "authority",
+      "url": "https://auctoriseal.verifrax.net/",
+      "type": "html",
+      "required": [
+        "AUCTORISEAL"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 31,
+      "body_sha256": "1ad721553b0a877e16339f97a99dbdf8712d6ff36bcc563c41f3bc3eee11825c",
+      "missing_required_tokens": [],
+      "semantic_errors": [],
+      "checked_at": "2026-05-20T19:24:17.841Z"
+    },
+    {
+      "id": "runtime",
+      "url": "https://corpiform.verifrax.net/",
+      "type": "html",
+      "required": [
+        "CORPIFORM"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 158,
+      "body_sha256": "fca731072fb1652609ee8012f9e2349e99ce9a769cb1f1bc84453a91ca65c48c",
+      "missing_required_tokens": [],
+      "semantic_errors": [],
+      "checked_at": "2026-05-20T19:24:17.999Z"
+    },
+    {
+      "id": "api",
+      "url": "https://api.verifrax.net/",
+      "type": "html",
+      "required": [
+        "VERIFRAX"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 27,
+      "body_sha256": "1104f9b41bd32a088b1803d384664247f0b22e5dc32fa235c25775a3fea568e7",
+      "missing_required_tokens": [],
+      "semantic_errors": [],
+      "checked_at": "2026-05-20T19:24:18.026Z"
+    },
+    {
+      "id": "archive",
+      "url": "https://sigillarium.verifrax.net/",
+      "type": "html",
+      "required": [
+        "SIGILLARIUM"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 143,
+      "body_sha256": "58b07cf4659bf4b207450bd59d77c6bbfc798ba6464312e50cd210bead5399b8",
+      "missing_required_tokens": [],
+      "semantic_errors": [],
+      "checked_at": "2026-05-20T19:24:18.169Z"
+    }
+  ],
+  "cross_checks": {
+    "failures": [],
+    "root_points_to_control_receipt": true,
+    "root_points_to_perimeter": true,
+    "receipt_green": true,
+    "perimeter_green": true,
+    "completion_false_everywhere": true
+  },
+  "summary": {
+    "total": 14,
+    "green": 14,
+    "failed": 0,
+    "cross_failures": 0
+  }
+}

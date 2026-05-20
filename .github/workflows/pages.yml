@@ -38,6 +38,10 @@ jobs:
         shell: bash
         run: npm run control:receipt
 
+      - name: Replay public control receipt
+        shell: bash
+        run: npm run control:replay
+
       - name: Prepare artifact
         shell: bash
         run: |
@@ -66,12 +70,15 @@ jobs:
           test -f dist/perimeter/status.json
           test -f dist/control-receipt/index.html
           test -f dist/control-receipt/receipt.json
+          test -f dist/control-receipt/replay.html
+          test -f dist/control-receipt/replay.json
           grep -Fx "status.verifrax.net" dist/CNAME
           grep -q "SYSTEM_CONTROL_MAP_OPEN" dist/system-control.json
           grep -q "SYSTEM_CONTROL_MAP_OPEN" dist/status.json
           grep -q "SYSTEM_CONTROL_MAP_OPEN" dist/system/index.html
           grep -q "PUBLIC_PERIMETER_GREEN" dist/perimeter/status.json
           grep -q "VERIFRAX_PUBLIC_CONTROL_RECEIPT_GREEN" dist/control-receipt/receipt.json
+          grep -q "VERIFRAX_PUBLIC_CONTROL_REPLAY_GREEN" dist/control-receipt/replay.json
 
       - uses: actions/upload-pages-artifact@v3
         with:

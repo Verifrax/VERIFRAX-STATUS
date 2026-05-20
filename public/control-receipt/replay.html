@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VERIFRAX Public Control Replay</title>
+<style>
+body{margin:0;background:#0f1115;color:#f4f5f7;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
+main{max-width:1180px;margin:0 auto;padding:48px 20px 72px}
+h1{font-size:clamp(38px,7vw,78px);line-height:.92;margin:0;letter-spacing:-.05em}
+.panel{border:1px solid #303846;background:#171b22;border-radius:18px;padding:22px;margin-top:22px}
+table{width:100%;border-collapse:collapse}td,th{border-top:1px solid #303846;text-align:left;padding:10px;vertical-align:top}
+a{color:#8ab4ff}code{border:1px solid #303846;border-radius:8px;padding:2px 6px}.muted{color:#a4acb8}
+</style>
+</head>
+<body>
+<main>
+  <div class="muted">VERIFRAX / public-control-replay</div>
+  <h1>Public control replay.</h1>
+  <p class="muted">Independent replay of the live public receipt, perimeter status, root control object, status control object, and host boundaries.</p>
+  <section class="panel">
+    <h2>VERIFRAX_PUBLIC_CONTROL_REPLAY_GREEN</h2>
+    <p>Generated: <code>2026-05-20T19:24:16.778Z</code></p>
+    <p>Control: <code>SYSTEM_CONTROL_MAP_OPEN</code></p>
+    <p>Perimeter: <code>PUBLIC_PERIMETER_GREEN</code></p>
+    <p>Receipt: <code>VERIFRAX_PUBLIC_CONTROL_RECEIPT_GREEN</code></p>
+    <p>System complete: <code>false</code></p>
+    <p>Machine replay: <a href="/control-receipt/replay.json">/control-receipt/replay.json</a></p>
+  </section>
+  <section class="panel">
+    <h2>Replay checks</h2>
+    <table>
+      <thead><tr><th>Check</th><th>Status</th><th>HTTP</th><th>URL</th><th>SHA-256</th><th>Failure</th></tr></thead>
+      <tbody>
+<tr>
+  <td><code>control_receipt</code></td>
+  <td>GREEN</td>
+  <td>200</td>
+  <td><a href="https://status.verifrax.net/control-receipt/receipt.json">https://status.verifrax.net/control-receipt/receipt.json</a></td>
+  <td><code>01a3f9d34e25bf4fcd41f1c6ca25e9638bc6369ac3e687d5e9b9510bc6260075</code></td>
+  <td>—</td>
+</tr>
+
+<tr>
+  <td><code>control_receipt_page</code></td>
+  <td>GREEN</td>
+  <td>200</td>
+  <td><a href="https://status.verifrax.net/control-receipt/">https://status.verifrax.net/control-receipt/</a></td>
+  <td><code>98a2e2ba77047999089127c64f540ff8519af7a9b360796a1c1b452d65dd4f55</code></td>
+  <td>—</td>
+</tr>
+
+<tr>
+  <td><code>perimeter_status</code></td>
+  <td>GREEN</td>
+  <td>200</td>
+  <td><a href="https://status.verifrax.net/perimeter/status.json">https://status.verifrax.net/perimeter/status.json</a></td>
+  <td><code>87c959f445850ed7699e46f190bfc10f6901dbb2b426510bd74c78eb2d65d8ba</code></td>
+  <td>—</td>
+</tr>
+
+<tr>
+  <td><code>root_control</code></td>
+  <td>GREEN</td>
+  <td>200</td>
+  <td><a href="https://www.verifrax.net/system-control.json">https://www.verifrax.net/system-control.json</a></td>
+  <td><code>bac9789b2866c3ce5daa0be05d35795fe8de84ec2143331a6301fe737e58a02d</code></td>
+  <td>—</td>
+</tr>
+
+<tr>
+  <td><code>root_control_page</code></td>
+  <td>GREEN</td>
+  <td>200</td>
+  <td><a href="https://www.verifrax.net/system/">https://www.verifrax.net/system/</a></td>
+  <td><code>db6b1837d67b56cd4c8a70e1f9ba24d748dc439b066ff500fd3e5e5800c58df4</code></td>
+  <td>—</td>
+</tr>
+
+<tr>
+  <td><code>status_control</code></td>
+  <td>GREEN</td>
+  <td>200</td>
+  <td><a href="https://status.verifrax.net/system-control.json">https://status.verifrax.net/system-control.json</a></td>
+  <td><code>29024e44193c3bc97668719d61a47b2767393293511dbb2d72b65b3e07e20ad5</code></td>
+  <td>—</td>
+</tr>
+
+<tr>
+  <td><code>apply_intake_boundary</code></td>
+  <td>GREEN</td>
+  <td>200</td>
+  <td><a href="https://apply.verifrax.net/">https://apply.verifrax.net/</a></td>
+  <td><code>1fd0526dcacac424a64abfc2adeb016a6e4d2f1817c239dfa16c0458fd2d64fa</code></td>
+  <td>—</td>
+</tr>
+
+<tr>
+  <td><code>docs</code></td>
+  <td>GREEN</td>
+  <td>200</td>
+  <td><a href="https://docs.verifrax.net/">https://docs.verifrax.net/</a></td>
+  <td><code>361aebbf8f9f152890e80442339f7aab9dff10d6e9f55150e6c53f26e3613236</code></td>
+  <td>—</td>
+</tr>
+
+<tr>
+  <td><code>proof</code></td>
+  <td>GREEN</td>
+  <td>200</td>
+  <td><a href="https://proof.verifrax.net/">https://proof.verifrax.net/</a></td>
+  <td><code>6c8ebec4b708481d93dd4c4d2c2bc163c87ac941450308cf2769c60ad98a69be</code></td>
+  <td>—</td>
+</tr>
+
+<tr>
+  <td><code>verify</code></td>
+  <td>GREEN</td>
+  <td>200</td>
+  <td><a href="https://verify.verifrax.net/">https://verify.verifrax.net/</a></td>
+  <td><code>2a737c09432ac1ac125db0f0f93d7aef2dd66299d62e9ebd0e7272e5ff3c62f7</code></td>
+  <td>—</td>
+</tr>
+
+<tr>
+  <td><code>authority</code></td>
+  <td>GREEN</td>
+  <td>200</td>
+  <td><a href="https://auctoriseal.verifrax.net/">https://auctoriseal.verifrax.net/</a></td>
+  <td><code>1ad721553b0a877e16339f97a99dbdf8712d6ff36bcc563c41f3bc3eee11825c</code></td>
+  <td>—</td>
+</tr>
+
+<tr>
+  <td><code>runtime</code></td>
+  <td>GREEN</td>
+  <td>200</td>
+  <td><a href="https://corpiform.verifrax.net/">https://corpiform.verifrax.net/</a></td>
+  <td><code>fca731072fb1652609ee8012f9e2349e99ce9a769cb1f1bc84453a91ca65c48c</code></td>
+  <td>—</td>
+</tr>
+
+<tr>
+  <td><code>api</code></td>
+  <td>GREEN</td>
+  <td>200</td>
+  <td><a href="https://api.verifrax.net/">https://api.verifrax.net/</a></td>
+  <td><code>1104f9b41bd32a088b1803d384664247f0b22e5dc32fa235c25775a3fea568e7</code></td>
+  <td>—</td>
+</tr>
+
+<tr>
+  <td><code>archive</code></td>
+  <td>GREEN</td>
+  <td>200</td>
+  <td><a href="https://sigillarium.verifrax.net/">https://sigillarium.verifrax.net/</a></td>
+  <td><code>58b07cf4659bf4b207450bd59d77c6bbfc798ba6464312e50cd210bead5399b8</code></td>
+  <td>—</td>
+</tr></tbody>
+    </table>
+  </section>
+</main>
+</body>
+</html>
