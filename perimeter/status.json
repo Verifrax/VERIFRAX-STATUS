@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-05-20T18:43:19.206Z",
+  "system": "VERIFRAX",
+  "state": "PUBLIC_PERIMETER_GREEN",
+  "system_complete": false,
+  "control_state": "SYSTEM_CONTROL_MAP_OPEN",
+  "completion_warning": "PUBLIC_PERIMETER_GREEN is not VERIFRAX_SYSTEM_COMPLETE",
+  "hosts": [
+    {
+      "id": "root",
+      "role": "root-router",
+      "url": "https://www.verifrax.net/",
+      "required": [
+        "VERIFRAX"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 204,
+      "missing_required_tokens": [],
+      "checked_at": "2026-05-20T18:43:19.411Z"
+    },
+    {
+      "id": "root-system",
+      "role": "root-system-control",
+      "url": "https://www.verifrax.net/system-control.json",
+      "required": [
+        "SYSTEM_CONTROL_MAP_OPEN",
+        "VERIFRAX"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 121,
+      "missing_required_tokens": [],
+      "checked_at": "2026-05-20T18:43:19.532Z"
+    },
+    {
+      "id": "docs",
+      "role": "docs",
+      "url": "https://docs.verifrax.net/",
+      "required": [
+        "VERIFRAX"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 249,
+      "missing_required_tokens": [],
+      "checked_at": "2026-05-20T18:43:19.781Z"
+    },
+    {
+      "id": "proof",
+      "role": "proof-publication",
+      "url": "https://proof.verifrax.net/",
+      "required": [
+        "VERIFRAX"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 187,
+      "missing_required_tokens": [],
+      "checked_at": "2026-05-20T18:43:19.968Z"
+    },
+    {
+      "id": "verify",
+      "role": "public-verification",
+      "url": "https://verify.verifrax.net/",
+      "required": [
+        "VERIFRAX"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 189,
+      "missing_required_tokens": [],
+      "checked_at": "2026-05-20T18:43:20.157Z"
+    },
+    {
+      "id": "authority",
+      "role": "authority",
+      "url": "https://auctoriseal.verifrax.net/",
+      "required": [
+        "AUCTORISEAL"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 190,
+      "missing_required_tokens": [],
+      "checked_at": "2026-05-20T18:43:20.347Z"
+    },
+    {
+      "id": "runtime",
+      "role": "runtime",
+      "url": "https://corpiform.verifrax.net/",
+      "required": [
+        "CORPIFORM"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 170,
+      "missing_required_tokens": [],
+      "checked_at": "2026-05-20T18:43:20.517Z"
+    },
+    {
+      "id": "execution-api",
+      "role": "execution-api",
+      "url": "https://api.verifrax.net/",
+      "required": [
+        "VERIFRAX"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 186,
+      "missing_required_tokens": [],
+      "checked_at": "2026-05-20T18:43:20.703Z"
+    },
+    {
+      "id": "archive",
+      "role": "archive-reference",
+      "url": "https://sigillarium.verifrax.net/",
+      "required": [
+        "SIGILLARIUM"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 280,
+      "missing_required_tokens": [],
+      "checked_at": "2026-05-20T18:43:20.983Z"
+    },
+    {
+      "id": "apply",
+      "role": "intake",
+      "url": "https://apply.verifrax.net/",
+      "required": [
+        "Terminal intake control plane",
+        "does not publish proof",
+        "recognize terminal truth",
+        "assign recourse"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 165,
+      "missing_required_tokens": [],
+      "checked_at": "2026-05-20T18:43:21.148Z"
+    },
+    {
+      "id": "status",
+      "role": "global-status-board",
+      "url": "https://status.verifrax.net/",
+      "required": [
+        "VERIFRAX Status"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 203,
+      "missing_required_tokens": [],
+      "checked_at": "2026-05-20T18:43:21.351Z"
+    },
+    {
+      "id": "status-system",
+      "role": "status-system-control",
+      "url": "https://status.verifrax.net/system-control.json",
+      "required": [
+        "SYSTEM_CONTROL_MAP_OPEN",
+        "VERIFRAX"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 121,
+      "missing_required_tokens": [],
+      "checked_at": "2026-05-20T18:43:21.472Z"
+    }
+  ],
+  "summary": {
+    "total": 12,
+    "green": 12,
+    "failed": 0
+  }
+}
