@@ -13,6 +13,22 @@
     "Verify": "https://verify.verifrax.net",
     "Authority": "https://auctoriseal.verifrax.net",
     "Runtime": "https://corpiform.verifrax.net",
-    "Execution": "https://api.verifrax.net"
-  }
+    "Execution": "https://api.verifrax.net",
+    "Archive": "https://sigillarium.verifrax.net",
+    "Apply": "https://apply.verifrax.net",
+    "Status": "https://status.verifrax.net"
+  },
+  "systemControlState": "SYSTEM_CONTROL_MAP_OPEN",
+  "systemComplete": false,
+  "hostControlRole": "global-status-board",
+  "statusHost": "https://status.verifrax.net",
+  "rootHost": "https://www.verifrax.net",
+  "forbiddenCompletionClaims": [
+    "APPLY_SUPER_LEVEL_UP_COMPLETE",
+    "VERIFRAX_SYSTEM_COMPLETE"
+  ],
+  "allowedSurfaceClaims": [
+    "APPLY_LIVE_INTAKE_SURFACE_GREEN",
+    "VERIFRAX_SYSTEM_CONTROL_MAP_OPEN"
+  ]
 }

@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "system": "VERIFRAX",
+  "state": "SYSTEM_CONTROL_MAP_OPEN",
+  "system_complete": false,
+  "apply_live_intake_surface": "green",
+  "required_next_level": [
+    "ROOT_ROUTER",
+    "GLOBAL_STATUS_BOARD"
+  ],
+  "hosts": [
+    { "id": "root", "role": "root-router", "url": "https://www.verifrax.net/" },
+    { "id": "docs", "role": "docs", "url": "https://docs.verifrax.net/" },
+    { "id": "proof", "role": "proof-publication", "url": "https://proof.verifrax.net/" },
+    { "id": "verify", "role": "public-verification", "url": "https://verify.verifrax.net/" },
+    { "id": "authority", "role": "authority-issuance", "url": "https://auctoriseal.verifrax.net/" },
+    { "id": "runtime", "role": "governed-runtime", "url": "https://corpiform.verifrax.net/" },
+    { "id": "execution-api", "role": "execution-api", "url": "https://api.verifrax.net/" },
+    { "id": "archive", "role": "archive-reference", "url": "https://sigillarium.verifrax.net/" },
+    { "id": "apply", "role": "intake", "url": "https://apply.verifrax.net/" },
+    { "id": "status", "role": "global-status-board", "url": "https://status.verifrax.net/" }
+  ],
+  "forbidden_claims": [
+    "APPLY_SUPER_LEVEL_UP_COMPLETE",
+    "VERIFRAX_SYSTEM_COMPLETE"
+  ],
+  "allowed_claims": [
+    "APPLY_LIVE_INTAKE_SURFACE_GREEN",
+    "VERIFRAX_SYSTEM_CONTROL_MAP_OPEN",
+    "ROOT_ROUTER_LIVE",
+    "GLOBAL_STATUS_BOARD_LIVE"
+  ]
+}
