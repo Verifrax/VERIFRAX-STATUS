@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "perimeter:status": "node scripts/generate-perimeter-status.mjs"
+  }
+}
