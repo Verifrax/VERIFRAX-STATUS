@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "receipt_type": "VERIFRAX_PUBLIC_CONTROL_RECEIPT",
-  "generated_at": "2026-05-20T19:14:57.306Z",
+  "generated_at": "2026-05-20T19:24:15.842Z",
   "state": "VERIFRAX_PUBLIC_CONTROL_RECEIPT_GREEN",
   "system": "VERIFRAX",
   "system_complete": false,
@@ -22,10 +22,10 @@
       "json": true,
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 209,
+      "elapsed_ms": 196,
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:14:57.516Z"
+      "checked_at": "2026-05-20T19:24:16.039Z"
     },
     {
       "id": "status_perimeter_page",
@@ -36,10 +36,10 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 113,
+      "elapsed_ms": 119,
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:14:57.629Z"
+      "checked_at": "2026-05-20T19:24:16.158Z"
     },
     {
       "id": "status_system_json",
@@ -50,10 +50,10 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 8,
+      "elapsed_ms": 7,
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:14:57.637Z"
+      "checked_at": "2026-05-20T19:24:16.165Z"
     },
     {
       "id": "status_system_page",
@@ -65,10 +65,10 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 122,
+      "elapsed_ms": 129,
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:14:57.759Z"
+      "checked_at": "2026-05-20T19:24:16.294Z"
     },
     {
       "id": "root_system_json",
@@ -80,10 +80,10 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 140,
+      "elapsed_ms": 115,
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:14:57.899Z"
+      "checked_at": "2026-05-20T19:24:16.409Z"
     },
     {
       "id": "root_system_page",
@@ -95,10 +95,10 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 133,
+      "elapsed_ms": 117,
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:14:58.032Z"
+      "checked_at": "2026-05-20T19:24:16.526Z"
     },
     {
       "id": "apply_intake",
@@ -111,10 +111,10 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 31,
+      "elapsed_ms": 30,
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:14:58.063Z"
+      "checked_at": "2026-05-20T19:24:16.556Z"
     },
     {
       "id": "public_root",
@@ -124,10 +124,10 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 129,
+      "elapsed_ms": 8,
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:14:58.192Z"
+      "checked_at": "2026-05-20T19:24:16.564Z"
     },
     {
       "id": "public_status",
@@ -137,10 +137,10 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 10,
+      "elapsed_ms": 9,
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:14:58.202Z"
+      "checked_at": "2026-05-20T19:24:16.573Z"
     }
   ],
   "summary": {

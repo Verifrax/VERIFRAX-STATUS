@@ -4,6 +4,7 @@
   "scripts": {
     "perimeter:status": "node scripts/generate-perimeter-status.mjs",
     "perimeter:assert": "node scripts/assert-perimeter-status.mjs",
-    "control:receipt": "node scripts/generate-public-control-receipt.mjs"
+    "control:receipt": "node scripts/generate-public-control-receipt.mjs",
+    "control:replay": "node scripts/replay-public-control-receipt.mjs"
   }
 }
