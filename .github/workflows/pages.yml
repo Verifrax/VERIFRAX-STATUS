@@ -34,6 +34,10 @@ jobs:
         shell: bash
         run: npm run perimeter:assert
 
+      - name: Generate public control receipt
+        shell: bash
+        run: npm run control:receipt
+
       - name: Prepare artifact
         shell: bash
         run: |
@@ -49,6 +53,7 @@ jobs:
           cp system-control.json dist/system-control.json
           cp status.json dist/status.json
           cp -R perimeter dist/perimeter
+          cp -R control-receipt dist/control-receipt
           test -f dist/index.html
           test -f dist/404.html
           test -f dist/CNAME
@@ -59,11 +64,14 @@ jobs:
           test -f dist/data/verifrax-system-control.json
           test -f dist/perimeter/index.html
           test -f dist/perimeter/status.json
+          test -f dist/control-receipt/index.html
+          test -f dist/control-receipt/receipt.json
           grep -Fx "status.verifrax.net" dist/CNAME
           grep -q "SYSTEM_CONTROL_MAP_OPEN" dist/system-control.json
           grep -q "SYSTEM_CONTROL_MAP_OPEN" dist/status.json
           grep -q "SYSTEM_CONTROL_MAP_OPEN" dist/system/index.html
           grep -q "PUBLIC_PERIMETER_GREEN" dist/perimeter/status.json
+          grep -q "VERIFRAX_PUBLIC_CONTROL_RECEIPT_GREEN" dist/control-receipt/receipt.json
 
       - uses: actions/upload-pages-artifact@v3
         with:
