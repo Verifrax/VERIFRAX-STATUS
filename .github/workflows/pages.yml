@@ -4,6 +4,8 @@ on:
   push:
     branches: [ main ]
   workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
 
 permissions:
   contents: read
@@ -27,6 +29,10 @@ jobs:
       - name: Run live perimeter monitor
         shell: bash
         run: npm run perimeter:status
+
+      - name: Assert live perimeter status
+        shell: bash
+        run: npm run perimeter:assert
 
       - name: Prepare artifact
         shell: bash

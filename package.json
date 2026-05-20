@@ -2,6 +2,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "perimeter:status": "node scripts/generate-perimeter-status.mjs"
+    "perimeter:status": "node scripts/generate-perimeter-status.mjs",
+    "perimeter:assert": "node scripts/assert-perimeter-status.mjs"
   }
 }
