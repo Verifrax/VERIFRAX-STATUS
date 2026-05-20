@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_type": "VERIFRAX_PUBLIC_CONTROL_RECEIPT",
+  "generated_at": "2026-05-20T19:14:57.306Z",
+  "state": "VERIFRAX_PUBLIC_CONTROL_RECEIPT_GREEN",
+  "system": "VERIFRAX",
+  "system_complete": false,
+  "control_state": "SYSTEM_CONTROL_MAP_OPEN",
+  "perimeter_state": "PUBLIC_PERIMETER_GREEN",
+  "scheduled_monitor": true,
+  "root_points_to_perimeter_status": true,
+  "completion_warning": "This receipt proves live public control posture only. It is not VERIFRAX_SYSTEM_COMPLETE.",
+  "checks": [
+    {
+      "id": "status_perimeter_json",
+      "url": "https://status.verifrax.net/perimeter/status.json",
+      "required": [
+        "PUBLIC_PERIMETER_GREEN",
+        "SYSTEM_CONTROL_MAP_OPEN",
+        "VERIFRAX"
+      ],
+      "json": true,
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 209,
+      "missing_required_tokens": [],
+      "semantic_errors": [],
+      "checked_at": "2026-05-20T19:14:57.516Z"
+    },
+    {
+      "id": "status_perimeter_page",
+      "url": "https://status.verifrax.net/perimeter/",
+      "required": [
+        "PUBLIC_PERIMETER_GREEN",
+        "SYSTEM_CONTROL_MAP_OPEN"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 113,
+      "missing_required_tokens": [],
+      "semantic_errors": [],
+      "checked_at": "2026-05-20T19:14:57.629Z"
+    },
+    {
+      "id": "status_system_json",
+      "url": "https://status.verifrax.net/system-control.json",
+      "required": [
+        "SYSTEM_CONTROL_MAP_OPEN",
+        "VERIFRAX"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 8,
+      "missing_required_tokens": [],
+      "semantic_errors": [],
+      "checked_at": "2026-05-20T19:14:57.637Z"
+    },
+    {
+      "id": "status_system_page",
+      "url": "https://status.verifrax.net/system/",
+      "required": [
+        "SYSTEM_CONTROL_MAP_OPEN",
+        "VERIFRAX system",
+        "not complete"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 122,
+      "missing_required_tokens": [],
+      "semantic_errors": [],
+      "checked_at": "2026-05-20T19:14:57.759Z"
+    },
+    {
+      "id": "root_system_json",
+      "url": "https://www.verifrax.net/system-control.json",
+      "required": [
+        "SYSTEM_CONTROL_MAP_OPEN",
+        "PUBLIC_PERIMETER_GREEN",
+        "status.verifrax.net/perimeter/status.json"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 140,
+      "missing_required_tokens": [],
+      "semantic_errors": [],
+      "checked_at": "2026-05-20T19:14:57.899Z"
+    },
+    {
+      "id": "root_system_page",
+      "url": "https://www.verifrax.net/system/",
+      "required": [
+        "SYSTEM_CONTROL_MAP_OPEN",
+        "PUBLIC_PERIMETER_GREEN",
+        "status.verifrax.net/perimeter/status.json"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 133,
+      "missing_required_tokens": [],
+      "semantic_errors": [],
+      "checked_at": "2026-05-20T19:14:58.032Z"
+    },
+    {
+      "id": "apply_intake",
+      "url": "https://apply.verifrax.net/",
+      "required": [
+        "Terminal intake control plane",
+        "does not publish proof",
+        "recognize terminal truth",
+        "assign recourse"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 31,
+      "missing_required_tokens": [],
+      "semantic_errors": [],
+      "checked_at": "2026-05-20T19:14:58.063Z"
+    },
+    {
+      "id": "public_root",
+      "url": "https://www.verifrax.net/",
+      "required": [
+        "VERIFRAX"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 129,
+      "missing_required_tokens": [],
+      "semantic_errors": [],
+      "checked_at": "2026-05-20T19:14:58.192Z"
+    },
+    {
+      "id": "public_status",
+      "url": "https://status.verifrax.net/",
+      "required": [
+        "VERIFRAX Status"
+      ],
+      "ok": true,
+      "http_status": 200,
+      "elapsed_ms": 10,
+      "missing_required_tokens": [],
+      "semantic_errors": [],
+      "checked_at": "2026-05-20T19:14:58.202Z"
+    }
+  ],
+  "summary": {
+    "total": 9,
+    "green": 9,
+    "failed": 0
+  }
+}
