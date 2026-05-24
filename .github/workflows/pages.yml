@@ -62,6 +62,7 @@ jobs:
           cp status.json dist/status.json
           cp -R perimeter dist/perimeter
           cp -R control-receipt dist/control-receipt
+          cp -R admissorium-v020 dist/admissorium-v020
           test -f dist/index.html
           test -f dist/404.html
           test -f dist/CNAME

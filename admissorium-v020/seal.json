@@ -1,0 +1,27 @@
+{
+  "system": "VERIFRAX",
+  "subsystem": "ADMISSORIUM",
+  "subsystem_version": "0.2.0",
+  "state": "ADMISSORIUM_V020_FINAL_RELEASE_SEALED",
+  "final_release_tag": "admissorium-v020-final-release-d2a51e09f5d3",
+  "final_release_sha": "d2a51e09f5d36778ba0c8130a3c691e648024a85",
+  "final_release": "https://github.com/Verifrax/ADMISSORIUM/releases/tag/admissorium-v020-final-release-d2a51e09f5d3",
+  "release_check_tag": "admissorium-v020-release-check-d2a51e09f5d3",
+  "release_check_release": "https://github.com/Verifrax/ADMISSORIUM/releases/tag/admissorium-v020-release-check-d2a51e09f5d3",
+  "readiness_tag": "admissorium-v020-readiness-artifact-13edab90b38d",
+  "readiness_release": "https://github.com/Verifrax/ADMISSORIUM/releases/tag/admissorium-v020-readiness-artifact-13edab90b38d",
+  "final_tag_release_check_run": "https://github.com/Verifrax/ADMISSORIUM/actions/runs/26330078809",
+  "proofs": {
+    "release_check_pass": true,
+    "readiness_artifact_pass": true,
+    "hostile_fixtures_pass": true,
+    "report_bundle_pass": true,
+    "webhook_signature_verification_pass": true,
+    "no_real_writer": true,
+    "no_token_persistence": true,
+    "no_truth_mutation": true
+  },
+  "public_control_meaning": "This seal binds the ADMISSORIUM v0.2.0 final release into the public VERIFRAX control perimeter.",
+  "completion_warning": "This is not VERIFRAX_SYSTEM_COMPLETE and not an operational writer authorization.",
+  "verifrax_system_complete": false
+}
