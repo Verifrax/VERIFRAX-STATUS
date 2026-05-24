@@ -1,0 +1,30 @@
+{
+  "answers": "WHAT_MAY_COUNT",
+  "canonical_id": "SYNTAGMARIUM_V010",
+  "next_valid_action": "BIND_ROOT_TO_SYNTAGMARIUM_V010_PUBLIC_CONTROL_SEAL",
+  "previous_closed_subsystem": {
+    "id": "ADMISSORIUM_V020",
+    "public_control_closure_sha": "c49855522ae348d5310f6c291642ae414b7a66b5"
+  },
+  "public_control_chain_release": "https://github.com/Verifrax/SYNTAGMARIUM/releases/tag/syntagmarium-v010-public-control-chain-eb010c0a2501",
+  "public_control_chain_sha": "eb010c0a2501f8b9ca522905160cc1886548f248",
+  "public_control_chain_tag": "syntagmarium-v010-public-control-chain-eb010c0a2501",
+  "role": "LAW",
+  "seal_state": "SYNTAGMARIUM_V010_PUBLIC_CONTROL_SEAL_PUBLISHED",
+  "source_gate_evaluation_sha": "7b100a99fb6574a2969910c41e457d9ce3d0ab46",
+  "source_intake_sha": "d2dfd7630af29b45e448f51c00c29b634d64ec94",
+  "source_queue_sha": "9165c58f7678667e5b4f0efad9c43f7f83b2b8d7",
+  "state": "SYNTAGMARIUM_V010_PUBLIC_CONTROL_CHAIN_OPEN",
+  "subsystem": "SYNTAGMARIUM",
+  "subsystem_version": "0.1.0",
+  "system": "VERIFRAX",
+  "truth_warning": "NOT_VERIFRAX_SYSTEM_COMPLETION_CLAIM",
+  "verifrax_system_complete": false,
+  "writer_boundary": {
+    "operational_authorization": false,
+    "package_publish": false,
+    "real_writer": false,
+    "token_persistence": false,
+    "truth_mutation": false
+  }
+}
