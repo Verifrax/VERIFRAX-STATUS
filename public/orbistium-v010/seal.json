@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "system": "VERIFRAX",
+  "subsystem": "ORBISTIUM",
+  "subsystem_version": "0.1.0",
+  "seal_state": "ORBISTIUM_V010_PUBLIC_CONTROL_SEAL_PUBLISHED",
+  "state": "ORBISTIUM_V010_PUBLIC_CONTROL_CHAIN_OPEN",
+  "public_control_chain_release": "https://github.com/Verifrax/ORBISTIUM/releases/tag/orbistium-v010-public-control-chain-6b93ff013274",
+  "public_control_chain_tag": "orbistium-v010-public-control-chain-6b93ff013274",
+  "public_control_chain_sha": "6b93ff01327411ff7adc168358d1306917a03c43",
+  "supersedes_public_control_chain_tag": "orbistium-v010-public-control-chain-19315ae2f8fa",
+  "supersedes_public_control_chain_sha": "19315ae2f8fa4f61b763cc83be6a2f6961d1f335",
+  "source_intake_sha": "1e2e0f4b68d8203a717f00fee7a3a255278af40d",
+  "source_queue_sha": "6c9d5653c6a71a7f1321c2ec00ab793756ddb7d6",
+  "source_gate_evaluation_sha": "1d9ee43486f911bf38e84b125f3c8c244daffa29",
+  "source_gate_register_sha": "585ebeac5b98be160536b7d4e8080ddae19610c4",
+  "source_registry_sha": "b194767e8494520ffb8bebcd5daf1b2d454d95a2",
+  "source_global_board_sha": "5e84f5b0bd65885a7b7566bfe6cc141d767db005",
+  "previous_public_control_closures": [
+    {
+      "id": "ADMISSORIUM_V020",
+      "public_control_closure_sha": "c49855522ae348d5310f6c291642ae414b7a66b5"
+    },
+    {
+      "id": "SYNTAGMARIUM_V010",
+      "public_control_closure_sha": "b1ce6d9ab6eca54cbf2e0180538e7b5588b0d0cf"
+    }
+  ],
+  "guards": {
+    "real_writer": false,
+    "token_persistence": false,
+    "truth_mutation": false
+  },
+  "verifrax_system_complete": false,
+  "next_valid_action": "BIND_ROOT_TO_ORBISTIUM_V010_PUBLIC_CONTROL_SEAL",
+  "truth_warning": "NOT_VERIFRAX_SYSTEM_COMPLETION_CLAIM",
+  "published_at": "2026-05-28T21:15:45Z"
+}

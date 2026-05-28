@@ -64,6 +64,7 @@ jobs:
           cp -R control-receipt dist/control-receipt
           cp -R admissorium-v020 dist/admissorium-v020
           cp -R syntagmarium-v010 dist/syntagmarium-v010
+          cp -R orbistium-v010 dist/orbistium-v010
           test -f dist/index.html
           test -f dist/404.html
           test -f dist/CNAME
