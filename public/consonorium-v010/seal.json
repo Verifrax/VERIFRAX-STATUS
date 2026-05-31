@@ -1,0 +1,34 @@
+{
+  "seal_state": "CONSONORIUM_V010_PUBLIC_CONTROL_SEAL_PUBLISHED",
+  "state": "CONSONORIUM_V010_PUBLIC_CONTROL_CHAIN_OPEN",
+  "system_complete": false,
+  "public_control_chain_release": "https://github.com/Verifrax/CONSONORIUM/releases/tag/consonorium-v010-public-control-chain-270c58d64d82",
+  "public_control_chain_tag": "consonorium-v010-public-control-chain-270c58d64d82",
+  "public_control_chain_sha": "270c58d64d8263eedc754885b3b12f238546c7a7",
+  "source_intake_sha": "9a22e2fcf1288e0e410e2e9a3a72f0c67f78ade2",
+  "source_queue_sha": "5a36b4b23f22717d38f6c97b04b912e1bc499faa",
+  "source_gate_evaluation_sha": "20a9bddf277a184d9b361457c5b67cfa380841e4",
+  "source_gate_register_sha": "006d196129326bb395d2f59010eb2394105c25c9",
+  "source_registry_sha": "485b3801315b7c16817773ea8de07e00ecc4edaf",
+  "source_global_board_sha": "bb39c9a79a229bcd70b93dc65e97b185efb011fc",
+  "previous_public_control_closures": [
+    {
+      "subsystem": "ADMISSORIUM_V020",
+      "public_control_closure_sha": "c49855522ae348d5310f6c291642ae414b7a66b5"
+    },
+    {
+      "subsystem": "SYNTAGMARIUM_V010",
+      "public_control_closure_sha": "b1ce6d9ab6eca54cbf2e0180538e7b5588b0d0cf"
+    },
+    {
+      "subsystem": "ORBISTIUM_V010",
+      "public_control_closure_sha": "54e5811f0718274e691a4d4a0e94b79f56a83f46"
+    }
+  ],
+  "public_control_denials": {
+    "real_writer": false,
+    "token_persistence": false,
+    "truth_mutation": false
+  },
+  "next_valid_action": "BIND_ROOT_TO_CONSONORIUM_V010_PUBLIC_CONTROL_SEAL"
+}
