@@ -67,6 +67,9 @@ jobs:
           cp -R orbistium-v010 dist/orbistium-v010
           cp -R consonorium-v010 dist/consonorium-v010
           cp -R tachyrium-v010 dist/tachyrium-v010
+          cp -R auctoriseal-v010 dist/auctoriseal-v010
+          mkdir -p dist/public
+          cp -R public/auctoriseal-v010 dist/public/auctoriseal-v010
           test -f dist/index.html
           test -f dist/404.html
           test -f dist/CNAME
@@ -75,6 +78,12 @@ jobs:
           test -f dist/system-control.json
           test -f dist/status.json
           test -f dist/data/verifrax-system-control.json
+          test -f dist/auctoriseal-v010/index.html
+          test -f dist/auctoriseal-v010/seal.json
+          test -f dist/public/auctoriseal-v010/index.html
+          test -f dist/public/auctoriseal-v010/seal.json
+          grep -q "AUCTORISEAL_V010_PUBLIC_CONTROL_SEAL_PUBLISHED" dist/auctoriseal-v010/seal.json
+          grep -q "BIND_ROOT_TO_AUCTORISEAL_V010_PUBLIC_CONTROL_SEAL" dist/auctoriseal-v010/seal.json
           test -f dist/perimeter/index.html
           test -f dist/perimeter/status.json
           test -f dist/control-receipt/index.html
