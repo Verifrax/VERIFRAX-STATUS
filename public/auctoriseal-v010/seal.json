@@ -1,0 +1,44 @@
+{
+  "seal_state": "AUCTORISEAL_V010_PUBLIC_CONTROL_SEAL_PUBLISHED",
+  "state": "AUCTORISEAL_V010_PUBLIC_CONTROL_CHAIN_OPEN",
+  "public_control_chain_release": "https://github.com/Verifrax/AUCTORISEAL/releases/tag/auctoriseal-v010-public-control-chain-cecdc9b4ebff",
+  "public_control_chain_tag": "auctoriseal-v010-public-control-chain-cecdc9b4ebff",
+  "public_control_chain_sha": "cecdc9b4ebff01d138a7a108351d5be796c8ee9a",
+  "source_public_control_intake_sha": "c2547af5de9e5498ce4b9488cb818cb74d31bab0",
+  "source_subsystem_closure_queue_sha": "1601e6eef97553e1d20daa6527605f596335a72d",
+  "source_system_completion_gate_evaluation_sha": "0b4d71ff89e1b279f4c55637bb246b08c50e7ab1",
+  "source_system_completion_gate_register_sha": "ca60330031980218104f6a4057ae640033533330",
+  "source_subsystem_closure_registry_sha": "23c51c5c574fcc88f81978f4d2891ea296bb32f8",
+  "source_global_status_board_sha": "e16c0833f1c15afde835189933693f5e563a3a42",
+  "previous_public_control_closures": [
+    {
+      "subsystem": "ADMISSORIUM_V020",
+      "public_control_closure_sha": "c49855522ae348d5310f6c291642ae414b7a66b5"
+    },
+    {
+      "subsystem": "SYNTAGMARIUM_V010",
+      "public_control_closure_sha": "b1ce6d9ab6eca54cbf2e0180538e7b5588b0d0cf"
+    },
+    {
+      "subsystem": "ORBISTIUM_V010",
+      "public_control_closure_sha": "54e5811f0718274e691a4d4a0e94b79f56a83f46"
+    },
+    {
+      "subsystem": "CONSONORIUM_V010",
+      "public_control_closure_sha": "d1e235788647a54113d4695e4c25df32c3b1d826"
+    },
+    {
+      "subsystem": "TACHYRIUM_V010",
+      "public_control_closure_sha": "da7622fef65afd0a6939eb91d3377a8fb7a19c79"
+    }
+  ],
+  "authority_boundary": {
+    "authorization_grant_claimed": false,
+    "execution_claimed": false,
+    "real_writer_claimed": false,
+    "token_persistence_claimed": false,
+    "truth_mutation_claimed": false
+  },
+  "system_complete": false,
+  "next_valid_action": "BIND_ROOT_TO_AUCTORISEAL_V010_PUBLIC_CONTROL_SEAL"
+}
