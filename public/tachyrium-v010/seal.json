@@ -1,0 +1,39 @@
+{
+  "seal_state": "TACHYRIUM_V010_PUBLIC_CONTROL_SEAL_PUBLISHED",
+  "subsystem": "TACHYRIUM_V010",
+  "state": "TACHYRIUM_V010_PUBLIC_CONTROL_CHAIN_OPEN",
+  "public_control_chain_release": "https://github.com/Verifrax/TACHYRIUM/releases/tag/tachyrium-v010-public-control-chain-5efb4194c845",
+  "public_control_chain_tag": "tachyrium-v010-public-control-chain-5efb4194c845",
+  "public_control_chain_sha": "5efb4194c84524257d0bd08a524a9d64e465a93b",
+  "source_intake_sha": "28257ed73cbf1f13a4a641f80785277693703149",
+  "source_queue_sha": "9feebece70455d9dfaaca6d82d5fcf6a318b718c",
+  "source_system_completion_gate_evaluation_sha": "e4678cdbaad52d8cb1546019daec8ffc0dc4e80f",
+  "source_system_completion_gate_register_sha": "6679e29fc660e8d2ce0b25861335df6562bb8f3c",
+  "source_subsystem_closure_registry_sha": "8613d1cbbe0adb3a82ada66f321cef5e459369e5",
+  "source_global_status_board_sha": "1b27e39ad9e735263a3eb817392bf8e283161a31",
+  "previous_public_control_closures": [
+    {
+      "subsystem": "ADMISSORIUM_V020",
+      "public_control_closure_sha": "c49855522ae348d5310f6c291642ae414b7a66b5"
+    },
+    {
+      "subsystem": "SYNTAGMARIUM_V010",
+      "public_control_closure_sha": "b1ce6d9ab6eca54cbf2e0180538e7b5588b0d0cf"
+    },
+    {
+      "subsystem": "ORBISTIUM_V010",
+      "public_control_closure_sha": "54e5811f0718274e691a4d4a0e94b79f56a83f46"
+    },
+    {
+      "subsystem": "CONSONORIUM_V010",
+      "public_control_closure_sha": "d1e235788647a54113d4695e4c25df32c3b1d826"
+    }
+  ],
+  "system_complete": false,
+  "constraints": {
+    "real_writer": false,
+    "token_persistence": false,
+    "truth_mutation": false
+  },
+  "next_valid_action": "BIND_ROOT_TO_TACHYRIUM_V010_PUBLIC_CONTROL_SEAL"
+}
