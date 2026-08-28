@@ -19,16 +19,21 @@
     "Status": "https://status.verifrax.net"
   },
   "systemControlState": "SYSTEM_CONTROL_MAP_OPEN",
-  "systemComplete": false,
+  "systemComplete": true,
   "hostControlRole": "global-status-board",
   "statusHost": "https://status.verifrax.net",
   "rootHost": "https://www.verifrax.net",
   "forbiddenCompletionClaims": [
-    "APPLY_SUPER_LEVEL_UP_COMPLETE",
-    "VERIFRAX_SYSTEM_COMPLETE"
+    "APPLY_SUPER_LEVEL_UP_COMPLETE"
   ],
   "allowedSurfaceClaims": [
     "APPLY_LIVE_INTAKE_SURFACE_GREEN",
-    "VERIFRAX_SYSTEM_CONTROL_MAP_OPEN"
-  ]
+    "VERIFRAX_SYSTEM_CONTROL_MAP_OPEN",
+    "OBSERVED_VERIFRAX_SYSTEM_COMPLETE"
+  ],
+  "observedSystemComplete": true,
+  "completionAuthority": false,
+  "provesSystemCompletion": false,
+  "completionState": "AUTHORIZED_COMPLETION_PROVENANCE_OBSERVED",
+  "completionSource": "https://www.verifrax.net/data/system-completion-integrity.json"
 }

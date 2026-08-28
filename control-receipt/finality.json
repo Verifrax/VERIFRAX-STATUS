@@ -1,10 +1,13 @@
 {
   "schema_version": "1.0.0",
   "object_type": "VERIFRAX_PUBLIC_CONTROL_FIXED_POINT",
-  "generated_at": "2026-05-20T19:43:10.964Z",
+  "generated_at": "2026-08-28T18:53:29.646Z",
   "state": "VERIFRAX_PUBLIC_CONTROL_FIXED_POINT_GREEN",
   "system": "VERIFRAX",
   "system_complete": false,
+  "observed_system_complete": true,
+  "completion_authority": false,
+  "proves_system_completion": false,
   "control_state": "SYSTEM_CONTROL_MAP_OPEN",
   "perimeter_state": "PUBLIC_PERIMETER_GREEN",
   "receipt_state": "VERIFRAX_PUBLIC_CONTROL_RECEIPT_GREEN",
@@ -21,7 +24,8 @@
     "It does not verify terminal truth.",
     "It does not recognize terminal truth.",
     "It does not assign terminal recourse.",
-    "It does not make VERIFRAX_SYSTEM_COMPLETE true."
+    "It may observe independently accepted VERIFRAX system completion.",
+    "It does not create or prove VERIFRAX system completion."
   ],
   "ci": {
     "repository": null,
@@ -35,8 +39,8 @@
       "url": "https://status.verifrax.net/control-receipt/replay.json",
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 205,
-      "body_sha256": "e34c4c1acbd81e0693d3c4b23d8d449ef099e50ddfc775f5d50a1e577ed1037d",
+      "elapsed_ms": 192,
+      "body_sha256": "fa414a2c3f69e1ca9e8308a4354bedc66a6e66ebe2af106e81426efc3bc83d39",
       "missing_required_tokens": [],
       "semantic_errors": []
     },
@@ -45,8 +49,8 @@
       "url": "https://status.verifrax.net/control-receipt/receipt.json",
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 120,
-      "body_sha256": "2f0ce8f4754926479fd61e362aedb3d61f41757b274cdefe65acece75674b25e",
+      "elapsed_ms": 135,
+      "body_sha256": "fd72398a50d7cbcd51851be6346df8df78ff844de27517b41b4e8b2d821483df",
       "missing_required_tokens": [],
       "semantic_errors": []
     },
@@ -55,8 +59,8 @@
       "url": "https://status.verifrax.net/perimeter/status.json",
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 12,
-      "body_sha256": "0c3e0a801561244d9bb904db7b284dbbf064d12da771239c1cc28ff86f6ba565",
+      "elapsed_ms": 127,
+      "body_sha256": "1f6910efb46002b9365ecf431f505a4780d96cf0472350cd6427c806518f20e8",
       "missing_required_tokens": [],
       "semantic_errors": []
     },
@@ -65,8 +69,8 @@
       "url": "https://www.verifrax.net/system-control.json",
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 175,
-      "body_sha256": "016f4b5ae2356181082d35889e63fd05fe154fc686c25a42dd896733c2e3a6d4",
+      "elapsed_ms": 45,
+      "body_sha256": "f78d71f4245a6596ff390505eb7f8646cacfa0411f11de379a893fb7d53fbdd7",
       "missing_required_tokens": [],
       "semantic_errors": []
     },
@@ -75,8 +79,8 @@
       "url": "https://www.verifrax.net/data/verifrax-system-control.json",
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 132,
-      "body_sha256": "016f4b5ae2356181082d35889e63fd05fe154fc686c25a42dd896733c2e3a6d4",
+      "elapsed_ms": 130,
+      "body_sha256": "f78d71f4245a6596ff390505eb7f8646cacfa0411f11de379a893fb7d53fbdd7",
       "missing_required_tokens": [],
       "semantic_errors": []
     },
@@ -85,8 +89,8 @@
       "url": "https://www.verifrax.net/system/",
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 120,
-      "body_sha256": "eb3773e0bd541b54c06b535eccecdce4e1ac4e0ecadf1c8c56b2de42c54fb612",
+      "elapsed_ms": 13,
+      "body_sha256": "65d05ba67bc698fab9dbf165e7302cd874743289b4de4808e5a6bf07d5cbbdb9",
       "missing_required_tokens": [],
       "semantic_errors": []
     },
@@ -95,7 +99,7 @@
       "url": "https://status.verifrax.net/system-control.json",
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 9,
+      "elapsed_ms": 128,
       "body_sha256": "29024e44193c3bc97668719d61a47b2767393293511dbb2d72b65b3e07e20ad5",
       "missing_required_tokens": [],
       "semantic_errors": []
@@ -105,7 +109,7 @@
       "url": "https://apply.verifrax.net/",
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 27,
+      "elapsed_ms": 42,
       "body_sha256": "1fd0526dcacac424a64abfc2adeb016a6e4d2f1817c239dfa16c0458fd2d64fa",
       "missing_required_tokens": [],
       "semantic_errors": []

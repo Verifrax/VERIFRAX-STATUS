@@ -22,12 +22,13 @@ const probes = [
   {
     id: "status_system_page",
     url: "https://status.verifrax.net/system/",
-    required: ["SYSTEM_CONTROL_MAP_OPEN", "VERIFRAX system", "not complete"]
+    required: ["SYSTEM_CONTROL_MAP_OPEN", "VERIFRAX system"]
   },
   {
     id: "root_system_json",
     url: "https://www.verifrax.net/system-control.json",
-    required: ["SYSTEM_CONTROL_MAP_OPEN", "PUBLIC_PERIMETER_GREEN", "status.verifrax.net/perimeter/status.json"]
+    required: ["SYSTEM_CONTROL_MAP_OPEN", "PUBLIC_PERIMETER_GREEN", "status.verifrax.net/perimeter/status.json"],
+    json: true
   },
   {
     id: "root_system_page",
@@ -83,6 +84,11 @@ async function fetchProbe(probe) {
           if (parsed.system_complete !== false) semantic_errors.push("system_complete_must_be_false");
           if (parsed.summary?.failed !== 0) semantic_errors.push("failed_perimeter_hosts");
         }
+
+        if (probe.id === "root_system_json") {
+          if (parsed.system_complete !== true) semantic_errors.push("authorized_root_system_complete_not_true");
+          if (parsed.verifrax_system_complete !== true) semantic_errors.push("authorized_root_verifrax_system_complete_not_true");
+        }
       } catch {
         semantic_errors.push("invalid_json");
       }
@@ -124,11 +130,13 @@ const receipt = {
   state: failed.length === 0 ? "VERIFRAX_PUBLIC_CONTROL_RECEIPT_GREEN" : "VERIFRAX_PUBLIC_CONTROL_RECEIPT_DEGRADED",
   system: "VERIFRAX",
   system_complete: false,
+  completion_authority: false,
+  proves_system_completion: false,
   control_state: "SYSTEM_CONTROL_MAP_OPEN",
   perimeter_state: "PUBLIC_PERIMETER_GREEN",
   scheduled_monitor: true,
   root_points_to_perimeter_status: true,
-  completion_warning: "This receipt proves live public control posture only. It is not VERIFRAX_SYSTEM_COMPLETE.",
+  completion_warning: "This receipt is non-authoritative public-control evidence. It does not issue or prove VERIFRAX system completion.",
   checks,
   summary: {
     total: checks.length,
@@ -178,7 +186,7 @@ a{color:#8ab4ff}code{border:1px solid #303846;border-radius:8px;padding:2px 6px}
     <p>Generated: <code>${receipt.generated_at}</code></p>
     <p>Control state: <code>${receipt.control_state}</code></p>
     <p>Perimeter state: <code>${receipt.perimeter_state}</code></p>
-    <p>System complete: <code>false</code></p>
+    <p>Receipt completion authority: <code>false</code></p>
     <p>Machine receipt: <a href="/control-receipt/receipt.json">/control-receipt/receipt.json</a></p>
   </section>
 

@@ -1,15 +1,17 @@
 {
   "schema_version": "1.0.0",
   "receipt_type": "VERIFRAX_PUBLIC_CONTROL_RECEIPT",
-  "generated_at": "2026-05-20T19:43:08.197Z",
+  "generated_at": "2026-08-28T18:53:27.128Z",
   "state": "VERIFRAX_PUBLIC_CONTROL_RECEIPT_GREEN",
   "system": "VERIFRAX",
   "system_complete": false,
+  "completion_authority": false,
+  "proves_system_completion": false,
   "control_state": "SYSTEM_CONTROL_MAP_OPEN",
   "perimeter_state": "PUBLIC_PERIMETER_GREEN",
   "scheduled_monitor": true,
   "root_points_to_perimeter_status": true,
-  "completion_warning": "This receipt proves live public control posture only. It is not VERIFRAX_SYSTEM_COMPLETE.",
+  "completion_warning": "This receipt is non-authoritative public-control evidence. It does not issue or prove VERIFRAX system completion.",
   "checks": [
     {
       "id": "status_perimeter_json",
@@ -22,10 +24,10 @@
       "json": true,
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 273,
+      "elapsed_ms": 187,
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:43:08.470Z"
+      "checked_at": "2026-08-28T18:53:27.316Z"
     },
     {
       "id": "status_perimeter_page",
@@ -36,10 +38,10 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 126,
+      "elapsed_ms": 108,
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:43:08.596Z"
+      "checked_at": "2026-08-28T18:53:27.424Z"
     },
     {
       "id": "status_system_json",
@@ -50,25 +52,24 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 118,
+      "elapsed_ms": 9,
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:43:08.714Z"
+      "checked_at": "2026-08-28T18:53:27.433Z"
     },
     {
       "id": "status_system_page",
       "url": "https://status.verifrax.net/system/",
       "required": [
         "SYSTEM_CONTROL_MAP_OPEN",
-        "VERIFRAX system",
-        "not complete"
+        "VERIFRAX system"
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 171,
+      "elapsed_ms": 110,
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:43:08.885Z"
+      "checked_at": "2026-08-28T18:53:27.543Z"
     },
     {
       "id": "root_system_json",
@@ -78,12 +79,13 @@
         "PUBLIC_PERIMETER_GREEN",
         "status.verifrax.net/perimeter/status.json"
       ],
+      "json": true,
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 83,
+      "elapsed_ms": 42,
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:43:08.968Z"
+      "checked_at": "2026-08-28T18:53:27.585Z"
     },
     {
       "id": "root_system_page",
@@ -95,10 +97,10 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 119,
+      "elapsed_ms": 128,
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:43:09.087Z"
+      "checked_at": "2026-08-28T18:53:27.714Z"
     },
     {
       "id": "apply_intake",
@@ -111,10 +113,10 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 31,
+      "elapsed_ms": 157,
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:43:09.118Z"
+      "checked_at": "2026-08-28T18:53:27.872Z"
     },
     {
       "id": "public_root",
@@ -124,10 +126,10 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 11,
+      "elapsed_ms": 10,
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:43:09.129Z"
+      "checked_at": "2026-08-28T18:53:27.882Z"
     },
     {
       "id": "public_status",
@@ -137,10 +139,10 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 122,
+      "elapsed_ms": 9,
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:43:09.251Z"
+      "checked_at": "2026-08-28T18:53:27.891Z"
     }
   ],
   "summary": {

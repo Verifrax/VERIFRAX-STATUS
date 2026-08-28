@@ -84,6 +84,9 @@ const perimeter = byId.perimeter.parsed;
 const root = byId.root_control.parsed;
 const rootData = byId.root_data_control.parsed;
 const statusControl = byId.status_control.parsed;
+const localStatusProjection = JSON.parse(
+  await fs.readFile("system-control.json", "utf8")
+);
 
 if (replay?.state !== "VERIFRAX_PUBLIC_CONTROL_REPLAY_GREEN") failures.push("replay_not_green");
 if (replay?.summary?.cross_failures !== 0) failures.push("replay_cross_failures");
@@ -98,13 +101,18 @@ if (perimeter?.system_complete !== false) failures.push("perimeter_completion_no
 
 if (root?.public_control_fixed_point !== "https://status.verifrax.net/control-receipt/finality.json") failures.push("root_fixed_point_url_bad");
 if (root?.public_control_fixed_point_state !== "VERIFRAX_PUBLIC_CONTROL_FIXED_POINT_GREEN") failures.push("root_fixed_point_state_bad");
-if (root?.system_complete !== false) failures.push("root_completion_not_false");
+if (root?.system_complete !== true) failures.push("root_completion_not_true");
+if (root?.verifrax_system_complete !== true) failures.push("root_verifrax_completion_not_true");
 
 if (rootData?.public_control_fixed_point !== "https://status.verifrax.net/control-receipt/finality.json") failures.push("root_data_fixed_point_url_bad");
 if (rootData?.public_control_fixed_point_state !== "VERIFRAX_PUBLIC_CONTROL_FIXED_POINT_GREEN") failures.push("root_data_fixed_point_state_bad");
-if (rootData?.system_complete !== false) failures.push("root_data_completion_not_false");
+if (rootData?.system_complete !== true) failures.push("root_data_completion_not_true");
 
-if (statusControl?.system_complete !== false) failures.push("status_completion_not_false");
+if (localStatusProjection.system_complete !== true) failures.push("local_status_projection_completion_not_true");
+if (localStatusProjection.observed_system_complete !== true) failures.push("local_status_projection_observed_completion_not_true");
+if (localStatusProjection.completion_authority !== false) failures.push("local_status_projection_claims_completion_authority");
+if (localStatusProjection.proves_system_completion !== false) failures.push("local_status_projection_claims_completion_proof");
+if (localStatusProjection.completion_state !== "AUTHORIZED_COMPLETION_PROVENANCE_OBSERVED") failures.push("local_status_projection_completion_state_bad");
 
 const finality = {
   schema_version: "1.0.0",
@@ -113,6 +121,9 @@ const finality = {
   state: failures.length === 0 ? "VERIFRAX_PUBLIC_CONTROL_FIXED_POINT_GREEN" : "VERIFRAX_PUBLIC_CONTROL_FIXED_POINT_DEGRADED",
   system: "VERIFRAX",
   system_complete: false,
+  observed_system_complete: root?.system_complete === true,
+  completion_authority: false,
+  proves_system_completion: false,
   control_state: "SYSTEM_CONTROL_MAP_OPEN",
   perimeter_state: "PUBLIC_PERIMETER_GREEN",
   receipt_state: "VERIFRAX_PUBLIC_CONTROL_RECEIPT_GREEN",
@@ -129,7 +140,8 @@ const finality = {
     "It does not verify terminal truth.",
     "It does not recognize terminal truth.",
     "It does not assign terminal recourse.",
-    "It does not make VERIFRAX_SYSTEM_COMPLETE true."
+    "It may observe independently accepted VERIFRAX system completion.",
+    "It does not create or prove VERIFRAX system completion."
   ],
   ci: {
     repository: process.env.GITHUB_REPOSITORY || null,
@@ -190,7 +202,9 @@ a{color:#8ab4ff}code{border:1px solid #303846;border-radius:8px;padding:2px 6px}
 <p>Perimeter: <code>${finality.perimeter_state}</code></p>
 <p>Receipt: <code>${finality.receipt_state}</code></p>
 <p>Replay: <code>${finality.replay_state}</code></p>
-<p>System complete: <code>false</code></p>
+<p>Observed VERIFRAX system completion: <code>${finality.observed_system_complete}</code></p>
+<p>Fixed-point completion authority: <code>false</code></p>
+<p>Fixed point proves system completion: <code>false</code></p>
 <p>Machine finality: <a href="/control-receipt/finality.json">/control-receipt/finality.json</a></p>
 </section>
 <section class="panel">
