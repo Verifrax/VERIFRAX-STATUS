@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-05-20T19:01:12.308Z",
+  "generated_at": "2026-08-28T18:53:24.657Z",
   "system": "VERIFRAX",
   "state": "PUBLIC_PERIMETER_GREEN",
   "system_complete": false,
@@ -16,9 +16,9 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 235,
+      "elapsed_ms": 223,
       "missing_required_tokens": [],
-      "checked_at": "2026-05-20T19:01:12.544Z"
+      "checked_at": "2026-08-28T18:53:24.880Z"
     },
     {
       "id": "root-system",
@@ -30,9 +30,9 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 117,
+      "elapsed_ms": 131,
       "missing_required_tokens": [],
-      "checked_at": "2026-05-20T19:01:12.662Z"
+      "checked_at": "2026-08-28T18:53:25.011Z"
     },
     {
       "id": "docs",
@@ -43,9 +43,9 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 150,
+      "elapsed_ms": 180,
       "missing_required_tokens": [],
-      "checked_at": "2026-05-20T19:01:12.812Z"
+      "checked_at": "2026-08-28T18:53:25.191Z"
     },
     {
       "id": "proof",
@@ -56,9 +56,9 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 157,
+      "elapsed_ms": 190,
       "missing_required_tokens": [],
-      "checked_at": "2026-05-20T19:01:12.969Z"
+      "checked_at": "2026-08-28T18:53:25.381Z"
     },
     {
       "id": "verify",
@@ -69,9 +69,9 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 172,
+      "elapsed_ms": 178,
       "missing_required_tokens": [],
-      "checked_at": "2026-05-20T19:01:13.141Z"
+      "checked_at": "2026-08-28T18:53:25.559Z"
     },
     {
       "id": "authority",
@@ -82,9 +82,9 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 184,
+      "elapsed_ms": 177,
       "missing_required_tokens": [],
-      "checked_at": "2026-05-20T19:01:13.325Z"
+      "checked_at": "2026-08-28T18:53:25.736Z"
     },
     {
       "id": "runtime",
@@ -95,9 +95,9 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 157,
+      "elapsed_ms": 188,
       "missing_required_tokens": [],
-      "checked_at": "2026-05-20T19:01:13.482Z"
+      "checked_at": "2026-08-28T18:53:25.924Z"
     },
     {
       "id": "execution-api",
@@ -108,9 +108,9 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 166,
+      "elapsed_ms": 193,
       "missing_required_tokens": [],
-      "checked_at": "2026-05-20T19:01:13.648Z"
+      "checked_at": "2026-08-28T18:53:26.117Z"
     },
     {
       "id": "archive",
@@ -121,9 +121,9 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 199,
+      "elapsed_ms": 201,
       "missing_required_tokens": [],
-      "checked_at": "2026-05-20T19:01:13.847Z"
+      "checked_at": "2026-08-28T18:53:26.318Z"
     },
     {
       "id": "apply",
@@ -137,9 +137,9 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 174,
+      "elapsed_ms": 166,
       "missing_required_tokens": [],
-      "checked_at": "2026-05-20T19:01:14.022Z"
+      "checked_at": "2026-08-28T18:53:26.484Z"
     },
     {
       "id": "status",
@@ -150,9 +150,9 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 178,
+      "elapsed_ms": 167,
       "missing_required_tokens": [],
-      "checked_at": "2026-05-20T19:01:14.200Z"
+      "checked_at": "2026-08-28T18:53:26.651Z"
     },
     {
       "id": "status-system",
@@ -164,9 +164,9 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 173,
+      "elapsed_ms": 129,
       "missing_required_tokens": [],
-      "checked_at": "2026-05-20T19:01:14.373Z"
+      "checked_at": "2026-08-28T18:53:26.780Z"
     }
   ],
   "summary": {

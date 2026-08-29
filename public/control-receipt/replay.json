@@ -1,10 +1,13 @@
 {
   "schema_version": "1.0.0",
   "replay_type": "VERIFRAX_PUBLIC_CONTROL_REPLAY",
-  "generated_at": "2026-05-20T19:43:09.454Z",
+  "generated_at": "2026-08-28T18:53:28.095Z",
   "system": "VERIFRAX",
   "state": "VERIFRAX_PUBLIC_CONTROL_REPLAY_GREEN",
   "system_complete": false,
+  "observed_system_complete": true,
+  "completion_authority": false,
+  "proves_system_completion": false,
   "control_state": "SYSTEM_CONTROL_MAP_OPEN",
   "perimeter_state": "PUBLIC_PERIMETER_GREEN",
   "receipt_state": "VERIFRAX_PUBLIC_CONTROL_RECEIPT_GREEN",
@@ -17,7 +20,8 @@
     "It does not verify as final source.",
     "It does not recognize terminal truth.",
     "It does not assign recourse.",
-    "It does not make VERIFRAX_SYSTEM_COMPLETE true."
+    "It may observe independently accepted VERIFRAX system completion.",
+    "It does not create or prove VERIFRAX system completion."
   ],
   "checks": [
     {
@@ -32,11 +36,11 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 220,
-      "body_sha256": "2f0ce8f4754926479fd61e362aedb3d61f41757b274cdefe65acece75674b25e",
+      "elapsed_ms": 195,
+      "body_sha256": "fd72398a50d7cbcd51851be6346df8df78ff844de27517b41b4e8b2d821483df",
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:43:09.675Z"
+      "checked_at": "2026-08-28T18:53:28.291Z"
     },
     {
       "id": "control_receipt_page",
@@ -48,11 +52,11 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 142,
-      "body_sha256": "27d1a7a3a93cfb3299807ee4eeb8b1f71c2e8f9c48c69634068d838befb41998",
+      "elapsed_ms": 169,
+      "body_sha256": "bb6436319372e4930e7bca2fb11e312ccbf74a2800a4700aacfa84ec18661ba9",
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:43:09.817Z"
+      "checked_at": "2026-08-28T18:53:28.460Z"
     },
     {
       "id": "perimeter_status",
@@ -65,11 +69,11 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 217,
-      "body_sha256": "0c3e0a801561244d9bb904db7b284dbbf064d12da771239c1cc28ff86f6ba565",
+      "elapsed_ms": 9,
+      "body_sha256": "1f6910efb46002b9365ecf431f505a4780d96cf0472350cd6427c806518f20e8",
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:43:10.034Z"
+      "checked_at": "2026-08-28T18:53:28.469Z"
     },
     {
       "id": "root_control",
@@ -83,11 +87,11 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 54,
-      "body_sha256": "016f4b5ae2356181082d35889e63fd05fe154fc686c25a42dd896733c2e3a6d4",
+      "elapsed_ms": 43,
+      "body_sha256": "f78d71f4245a6596ff390505eb7f8646cacfa0411f11de379a893fb7d53fbdd7",
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:43:10.088Z"
+      "checked_at": "2026-08-28T18:53:28.512Z"
     },
     {
       "id": "root_control_page",
@@ -101,11 +105,11 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 10,
-      "body_sha256": "eb3773e0bd541b54c06b535eccecdce4e1ac4e0ecadf1c8c56b2de42c54fb612",
+      "elapsed_ms": 15,
+      "body_sha256": "65d05ba67bc698fab9dbf165e7302cd874743289b4de4808e5a6bf07d5cbbdb9",
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:43:10.098Z"
+      "checked_at": "2026-08-28T18:53:28.527Z"
     },
     {
       "id": "status_control",
@@ -117,11 +121,11 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 9,
+      "elapsed_ms": 8,
       "body_sha256": "29024e44193c3bc97668719d61a47b2767393293511dbb2d72b65b3e07e20ad5",
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:43:10.107Z"
+      "checked_at": "2026-08-28T18:53:28.535Z"
     },
     {
       "id": "apply_intake_boundary",
@@ -135,11 +139,11 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 29,
+      "elapsed_ms": 37,
       "body_sha256": "1fd0526dcacac424a64abfc2adeb016a6e4d2f1817c239dfa16c0458fd2d64fa",
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:43:10.136Z"
+      "checked_at": "2026-08-28T18:53:28.572Z"
     },
     {
       "id": "docs",
@@ -150,11 +154,11 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 144,
+      "elapsed_ms": 35,
       "body_sha256": "361aebbf8f9f152890e80442339f7aab9dff10d6e9f55150e6c53f26e3613236",
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:43:10.280Z"
+      "checked_at": "2026-08-28T18:53:28.607Z"
     },
     {
       "id": "proof",
@@ -165,11 +169,11 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 25,
+      "elapsed_ms": 203,
       "body_sha256": "6c8ebec4b708481d93dd4c4d2c2bc163c87ac941450308cf2769c60ad98a69be",
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:43:10.306Z"
+      "checked_at": "2026-08-28T18:53:28.810Z"
     },
     {
       "id": "verify",
@@ -180,11 +184,11 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 146,
+      "elapsed_ms": 153,
       "body_sha256": "2a737c09432ac1ac125db0f0f93d7aef2dd66299d62e9ebd0e7272e5ff3c62f7",
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:43:10.452Z"
+      "checked_at": "2026-08-28T18:53:28.963Z"
     },
     {
       "id": "authority",
@@ -195,11 +199,11 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 26,
-      "body_sha256": "1ad721553b0a877e16339f97a99dbdf8712d6ff36bcc563c41f3bc3eee11825c",
+      "elapsed_ms": 40,
+      "body_sha256": "e4c6191c07260388105dc024b20a57ae8fe8996ca73fb35ac057998349639cc5",
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:43:10.478Z"
+      "checked_at": "2026-08-28T18:53:29.003Z"
     },
     {
       "id": "runtime",
@@ -210,11 +214,11 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 28,
+      "elapsed_ms": 36,
       "body_sha256": "fca731072fb1652609ee8012f9e2349e99ce9a769cb1f1bc84453a91ca65c48c",
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:43:10.506Z"
+      "checked_at": "2026-08-28T18:53:29.039Z"
     },
     {
       "id": "api",
@@ -225,11 +229,11 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 34,
+      "elapsed_ms": 166,
       "body_sha256": "1104f9b41bd32a088b1803d384664247f0b22e5dc32fa235c25775a3fea568e7",
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:43:10.540Z"
+      "checked_at": "2026-08-28T18:53:29.205Z"
     },
     {
       "id": "archive",
@@ -240,11 +244,11 @@
       ],
       "ok": true,
       "http_status": 200,
-      "elapsed_ms": 140,
+      "elapsed_ms": 184,
       "body_sha256": "58b07cf4659bf4b207450bd59d77c6bbfc798ba6464312e50cd210bead5399b8",
       "missing_required_tokens": [],
       "semantic_errors": [],
-      "checked_at": "2026-05-20T19:43:10.680Z"
+      "checked_at": "2026-08-28T18:53:29.389Z"
     }
   ],
   "cross_checks": {
@@ -253,7 +257,11 @@
     "root_points_to_perimeter": true,
     "receipt_green": true,
     "perimeter_green": true,
-    "completion_false_everywhere": true
+    "bounded_evidence_objects_non_authoritative": true,
+    "root_system_complete_observed": true,
+    "root_verifrax_system_complete_observed": true,
+    "local_status_projection_matches_root": true,
+    "live_status_projection_value": false
   },
   "summary": {
     "total": 14,
